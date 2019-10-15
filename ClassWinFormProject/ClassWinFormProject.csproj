@@ -46,14 +46,41 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="10201_Hello.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="10201_Hello.Designer.cs">
+      <DependentUpon>10201_Hello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassMainForm.Designer.cs">
+      <DependentUpon>ClassMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMainForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassMainForm1.Designer.cs">
+      <DependentUpon>ClassMainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ClassMainForm.resx">
+      <DependentUpon>ClassMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassMainForm1.resx">
+      <DependentUpon>ClassMainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

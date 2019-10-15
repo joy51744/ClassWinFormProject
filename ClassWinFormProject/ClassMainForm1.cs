@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ClassWinFormProject
 {
-    public partial class Form1 : Form
+    public partial class ClassMainForm1 : Form
     {
-        public Form1()
+        public ClassMainForm1()
         {
             InitializeComponent();
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            this.Visible = false;
+            main.Show();
         }
     }
 }
