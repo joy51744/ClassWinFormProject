@@ -46,9 +46,9 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonTextCalculate = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonString = new System.Windows.Forms.Button();
             this.buttonHello = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
@@ -57,7 +57,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel2.Text = "離開";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
@@ -69,7 +69,7 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(111, 22);
             this.toolStripMenuItem2.Text = "10202";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -78,7 +78,7 @@
             this.toolStripLabel1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2});
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
             this.toolStripLabel1.Text = "專案";
             // 
             // toolStrip1
@@ -219,15 +219,16 @@
             this.button5.Text = "滾動字幕";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // buttonTextCalculate
             // 
-            this.button4.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button4.Location = new System.Drawing.Point(25, 383);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 45);
-            this.button4.TabIndex = 64;
-            this.button4.Text = "文字方塊";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonTextCalculate.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonTextCalculate.Location = new System.Drawing.Point(25, 383);
+            this.buttonTextCalculate.Name = "buttonTextCalculate";
+            this.buttonTextCalculate.Size = new System.Drawing.Size(130, 45);
+            this.buttonTextCalculate.TabIndex = 64;
+            this.buttonTextCalculate.Text = "基本運算";
+            this.buttonTextCalculate.UseVisualStyleBackColor = true;
+            this.buttonTextCalculate.Click += new System.EventHandler(this.ButtonTextCalculate_Click);
             // 
             // button3
             // 
@@ -238,16 +239,18 @@
             this.button3.TabIndex = 63;
             this.button3.Text = "數字排序";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button2
+            // buttonString
             // 
-            this.button2.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(25, 193);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 45);
-            this.button2.TabIndex = 62;
-            this.button2.Text = "格式輸入";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonString.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonString.Location = new System.Drawing.Point(25, 193);
+            this.buttonString.Name = "buttonString";
+            this.buttonString.Size = new System.Drawing.Size(130, 45);
+            this.buttonString.TabIndex = 62;
+            this.buttonString.Text = "格式輸入";
+            this.buttonString.UseVisualStyleBackColor = true;
+            this.buttonString.Click += new System.EventHandler(this.ButtonString_Click);
             // 
             // buttonHello
             // 
@@ -263,10 +266,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("王漢宗顏楷體繁", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(279, 40);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(283, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 29);
+            this.label1.Size = new System.Drawing.Size(233, 33);
             this.label1.TabIndex = 60;
             this.label1.Text = "C# Class Project";
             // 
@@ -288,9 +291,9 @@
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonTextCalculate);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonString);
             this.Controls.Add(this.buttonHello);
             this.Controls.Add(this.label1);
             this.Name = "ClassMainForm";
@@ -322,9 +325,9 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonTextCalculate;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonString;
         private System.Windows.Forms.Button buttonHello;
         private System.Windows.Forms.Label label1;
     }

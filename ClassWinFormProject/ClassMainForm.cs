@@ -37,5 +37,26 @@ namespace ClassWinFormProject
             this.Visible = false;
             hello.Show();
         }
+
+        private void ButtonString_Click(object sender, EventArgs e)
+        {
+            _10201_String main = new _10201_String();
+            this.Visible = false;
+            main.Show();
+        }
+
+        private void ButtonTextCalculate_Click(object sender, EventArgs e)
+        {
+            _10201_TextCalculate textCalculate = new _10201_TextCalculate();
+            this.Visible = false;
+            textCalculate.Show();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            _10201_Sort sort = new _10201_Sort();
+            this.Visible = false;
+            sort.Show();
+        }
     }
 }

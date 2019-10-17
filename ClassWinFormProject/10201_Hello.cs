@@ -16,5 +16,18 @@ namespace ClassWinFormProject
         {
             InitializeComponent();
         }
+
+        private void ButtonEnter_Click(object sender, EventArgs e)
+        {
+            string name = textBox1.Text;
+            MessageBox.Show("Hello, " + name + "Welcome to My Project.");
+        }
+
+        private void ToolStripLabel1_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            this.Visible = false;
+            main.Show();
+        }
     }
 }

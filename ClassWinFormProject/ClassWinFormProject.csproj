@@ -46,11 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10201_DateTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_DateTime.Designer.cs">
+      <DependentUpon>10201_DateTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="10201_Hello.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10201_Hello.Designer.cs">
       <DependentUpon>10201_Hello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_Sort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_Sort.Designer.cs">
+      <DependentUpon>10201_Sort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_String.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_String.Designer.cs">
+      <DependentUpon>10201_String.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_TextCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_TextCalculate.Designer.cs">
+      <DependentUpon>10201_TextCalculate.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassMainForm.cs">
       <SubType>Form</SubType>
@@ -72,6 +96,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="10201_DateTime.resx">
+      <DependentUpon>10201_DateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_Hello.resx">
+      <DependentUpon>10201_Hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_Sort.resx">
+      <DependentUpon>10201_Sort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_String.resx">
+      <DependentUpon>10201_String.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_TextCalculate.resx">
+      <DependentUpon>10201_TextCalculate.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassMainForm.resx">
       <DependentUpon>ClassMainForm.cs</DependentUpon>
     </EmbeddedResource>
