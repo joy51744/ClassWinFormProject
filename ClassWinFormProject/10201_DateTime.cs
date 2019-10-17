@@ -54,5 +54,19 @@ namespace ClassWinFormProject
                             "  {s}表示:" + s + "\r\n" +
                             "  {ss}表示秒數會格式化為有前置零:" + ss + "\r\n";
         }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+            ClassMainForm main = new ClassMainForm();
+            this.Visible = false;
+            main.Show();
+        }
+
+        private void 字串輸入ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _10201_String main = new _10201_String();
+            this.Visible = false;
+            main.Show();
+        }
     }
 }

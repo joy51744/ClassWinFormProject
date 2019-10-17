@@ -103,7 +103,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel1.Text = "離開";
             this.toolStripLabel1.Click += new System.EventHandler(this.ToolStripLabel1_Click);
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.textBoxNumber2);
             this.Controls.Add(this.textBoxNumber1);
             this.Name = "_10201_TextCalculate";
-            this.Text = "_10201_TextCalculate";
+            this.Text = "C#課程專案 | 基本運算";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

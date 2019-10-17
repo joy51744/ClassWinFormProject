@@ -34,30 +34,30 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.button16 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.buttonMoney = new System.Windows.Forms.Button();
+            this.buttonCompounding = new System.Windows.Forms.Button();
+            this.buttonFor = new System.Windows.Forms.Button();
+            this.buttonWhile = new System.Windows.Forms.Button();
+            this.buttonLogic = new System.Windows.Forms.Button();
+            this.buttonIF = new System.Windows.Forms.Button();
+            this.buttonTicket = new System.Windows.Forms.Button();
+            this.buttonStatistic = new System.Windows.Forms.Button();
+            this.buttonTimer = new System.Windows.Forms.Button();
+            this.buttonMarquee = new System.Windows.Forms.Button();
+            this.buttonMember = new System.Windows.Forms.Button();
             this.buttonTextCalculate = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.buttonString = new System.Windows.Forms.Button();
             this.buttonHello = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonLotto = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel2.Text = "離開";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
@@ -69,7 +69,7 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
             this.toolStripMenuItem2.Text = "10202";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
@@ -78,7 +78,7 @@
             this.toolStripLabel1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripMenuItem2});
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
             this.toolStripLabel1.Text = "專案";
             // 
             // toolStrip1
@@ -99,130 +99,131 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // button16
+            // buttonMoney
             // 
-            this.button16.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button16.Location = new System.Drawing.Point(645, 383);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(130, 45);
-            this.button16.TabIndex = 76;
-            this.button16.Text = "單位轉換器";
-            this.button16.UseVisualStyleBackColor = true;
+            this.buttonMoney.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonMoney.Location = new System.Drawing.Point(643, 383);
+            this.buttonMoney.Name = "buttonMoney";
+            this.buttonMoney.Size = new System.Drawing.Size(130, 45);
+            this.buttonMoney.TabIndex = 75;
+            this.buttonMoney.Text = "錢幣兌換";
+            this.buttonMoney.UseVisualStyleBackColor = true;
+            this.buttonMoney.Click += new System.EventHandler(this.buttonMoney_Click);
             // 
-            // button15
+            // buttonCompounding
             // 
-            this.button15.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button15.Location = new System.Drawing.Point(645, 288);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(130, 45);
-            this.button15.TabIndex = 75;
-            this.button15.Text = "錢幣兌換";
-            this.button15.UseVisualStyleBackColor = true;
+            this.buttonCompounding.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonCompounding.Location = new System.Drawing.Point(643, 288);
+            this.buttonCompounding.Name = "buttonCompounding";
+            this.buttonCompounding.Size = new System.Drawing.Size(130, 45);
+            this.buttonCompounding.TabIndex = 74;
+            this.buttonCompounding.Text = "複利計算";
+            this.buttonCompounding.UseVisualStyleBackColor = true;
+            this.buttonCompounding.Click += new System.EventHandler(this.buttonCompounding_Click);
             // 
-            // button14
+            // buttonFor
             // 
-            this.button14.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button14.Location = new System.Drawing.Point(645, 193);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(130, 45);
-            this.button14.TabIndex = 74;
-            this.button14.Text = "複利計算";
-            this.button14.UseVisualStyleBackColor = true;
+            this.buttonFor.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonFor.Location = new System.Drawing.Point(643, 193);
+            this.buttonFor.Name = "buttonFor";
+            this.buttonFor.Size = new System.Drawing.Size(130, 45);
+            this.buttonFor.TabIndex = 73;
+            this.buttonFor.Text = "九九乘法表";
+            this.buttonFor.UseVisualStyleBackColor = true;
+            this.buttonFor.Click += new System.EventHandler(this.buttonFor_Click);
             // 
-            // button13
+            // buttonWhile
             // 
-            this.button13.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button13.Location = new System.Drawing.Point(643, 98);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(130, 45);
-            this.button13.TabIndex = 73;
-            this.button13.Text = "九九乘法表";
-            this.button13.UseVisualStyleBackColor = true;
+            this.buttonWhile.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonWhile.Location = new System.Drawing.Point(643, 98);
+            this.buttonWhile.Name = "buttonWhile";
+            this.buttonWhile.Size = new System.Drawing.Size(130, 45);
+            this.buttonWhile.TabIndex = 72;
+            this.buttonWhile.Text = "溫度轉換";
+            this.buttonWhile.UseVisualStyleBackColor = true;
+            this.buttonWhile.Click += new System.EventHandler(this.buttonWhile_Click);
             // 
-            // button12
+            // buttonLogic
             // 
-            this.button12.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button12.Location = new System.Drawing.Point(437, 383);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(130, 45);
-            this.button12.TabIndex = 72;
-            this.button12.Text = "溫度轉換";
-            this.button12.UseVisualStyleBackColor = true;
+            this.buttonLogic.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonLogic.Location = new System.Drawing.Point(437, 383);
+            this.buttonLogic.Name = "buttonLogic";
+            this.buttonLogic.Size = new System.Drawing.Size(130, 45);
+            this.buttonLogic.TabIndex = 71;
+            this.buttonLogic.Text = "邏輯判斷";
+            this.buttonLogic.UseVisualStyleBackColor = true;
+            this.buttonLogic.Click += new System.EventHandler(this.buttonLogic_Click);
             // 
-            // button11
+            // buttonIF
             // 
-            this.button11.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button11.Location = new System.Drawing.Point(437, 288);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(130, 45);
-            this.button11.TabIndex = 71;
-            this.button11.Text = "邏輯判斷";
-            this.button11.UseVisualStyleBackColor = true;
+            this.buttonIF.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonIF.Location = new System.Drawing.Point(437, 288);
+            this.buttonIF.Name = "buttonIF";
+            this.buttonIF.Size = new System.Drawing.Size(130, 45);
+            this.buttonIF.TabIndex = 70;
+            this.buttonIF.Text = "偶數判斷";
+            this.buttonIF.UseVisualStyleBackColor = true;
+            this.buttonIF.Click += new System.EventHandler(this.buttonIF_Click);
             // 
-            // button10
+            // buttonTicket
             // 
-            this.button10.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button10.Location = new System.Drawing.Point(437, 193);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(130, 45);
-            this.button10.TabIndex = 70;
-            this.button10.Text = "偶數判斷";
-            this.button10.UseVisualStyleBackColor = true;
+            this.buttonTicket.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonTicket.Location = new System.Drawing.Point(437, 193);
+            this.buttonTicket.Name = "buttonTicket";
+            this.buttonTicket.Size = new System.Drawing.Size(130, 45);
+            this.buttonTicket.TabIndex = 69;
+            this.buttonTicket.Text = "高鐵購票";
+            this.buttonTicket.UseVisualStyleBackColor = true;
+            this.buttonTicket.Click += new System.EventHandler(this.buttonTicket_Click);
             // 
-            // button9
+            // buttonStatistic
             // 
-            this.button9.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button9.Location = new System.Drawing.Point(437, 98);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(130, 45);
-            this.button9.TabIndex = 69;
-            this.button9.Text = "高鐵購票";
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonStatistic.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonStatistic.Location = new System.Drawing.Point(437, 98);
+            this.buttonStatistic.Name = "buttonStatistic";
+            this.buttonStatistic.Size = new System.Drawing.Size(130, 45);
+            this.buttonStatistic.TabIndex = 68;
+            this.buttonStatistic.Text = "便當統計";
+            this.buttonStatistic.UseVisualStyleBackColor = true;
+            this.buttonStatistic.Click += new System.EventHandler(this.buttonStatistic_Click);
             // 
-            // button8
+            // buttonTimer
             // 
-            this.button8.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button8.Location = new System.Drawing.Point(231, 383);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(130, 45);
-            this.button8.TabIndex = 68;
-            this.button8.Text = "便當統計";
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonTimer.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonTimer.Location = new System.Drawing.Point(231, 383);
+            this.buttonTimer.Name = "buttonTimer";
+            this.buttonTimer.Size = new System.Drawing.Size(130, 45);
+            this.buttonTimer.TabIndex = 67;
+            this.buttonTimer.Text = "計時器";
+            this.buttonTimer.UseVisualStyleBackColor = true;
+            this.buttonTimer.Click += new System.EventHandler(this.buttonTimer_Click);
             // 
-            // button7
+            // buttonMarquee
             // 
-            this.button7.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button7.Location = new System.Drawing.Point(231, 288);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(130, 45);
-            this.button7.TabIndex = 67;
-            this.button7.Text = "計時器";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonMarquee.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonMarquee.Location = new System.Drawing.Point(231, 288);
+            this.buttonMarquee.Name = "buttonMarquee";
+            this.buttonMarquee.Size = new System.Drawing.Size(130, 45);
+            this.buttonMarquee.TabIndex = 66;
+            this.buttonMarquee.Text = "跑馬燈";
+            this.buttonMarquee.UseVisualStyleBackColor = true;
+            this.buttonMarquee.Click += new System.EventHandler(this.buttonMarquee_Click);
             // 
-            // button6
+            // buttonMember
             // 
-            this.button6.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button6.Location = new System.Drawing.Point(231, 193);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(130, 45);
-            this.button6.TabIndex = 66;
-            this.button6.Text = "會員資訊";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.button5.Location = new System.Drawing.Point(231, 98);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 45);
-            this.button5.TabIndex = 65;
-            this.button5.Text = "滾動字幕";
-            this.button5.UseVisualStyleBackColor = true;
+            this.buttonMember.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonMember.Location = new System.Drawing.Point(231, 193);
+            this.buttonMember.Name = "buttonMember";
+            this.buttonMember.Size = new System.Drawing.Size(130, 45);
+            this.buttonMember.TabIndex = 65;
+            this.buttonMember.Text = "會員資訊";
+            this.buttonMember.UseVisualStyleBackColor = true;
+            this.buttonMember.Click += new System.EventHandler(this.buttonMember_Click);
             // 
             // buttonTextCalculate
             // 
             this.buttonTextCalculate.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
-            this.buttonTextCalculate.Location = new System.Drawing.Point(25, 383);
+            this.buttonTextCalculate.Location = new System.Drawing.Point(231, 98);
             this.buttonTextCalculate.Name = "buttonTextCalculate";
             this.buttonTextCalculate.Size = new System.Drawing.Size(130, 45);
             this.buttonTextCalculate.TabIndex = 64;
@@ -239,7 +240,7 @@
             this.button3.TabIndex = 63;
             this.button3.Text = "數字排序";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.button3.Click += new System.EventHandler(this.ButtonSort_Click);
             // 
             // buttonString
             // 
@@ -273,24 +274,35 @@
             this.label1.TabIndex = 60;
             this.label1.Text = "C# Class Project";
             // 
+            // buttonLotto
+            // 
+            this.buttonLotto.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold);
+            this.buttonLotto.Location = new System.Drawing.Point(25, 383);
+            this.buttonLotto.Name = "buttonLotto";
+            this.buttonLotto.Size = new System.Drawing.Size(130, 45);
+            this.buttonLotto.TabIndex = 78;
+            this.buttonLotto.Text = "樂透";
+            this.buttonLotto.UseVisualStyleBackColor = true;
+            this.buttonLotto.Click += new System.EventHandler(this.buttonLotto_Click);
+            // 
             // ClassMainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonLotto);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button16);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button13);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.buttonMoney);
+            this.Controls.Add(this.buttonCompounding);
+            this.Controls.Add(this.buttonFor);
+            this.Controls.Add(this.buttonWhile);
+            this.Controls.Add(this.buttonLogic);
+            this.Controls.Add(this.buttonIF);
+            this.Controls.Add(this.buttonTicket);
+            this.Controls.Add(this.buttonStatistic);
+            this.Controls.Add(this.buttonTimer);
+            this.Controls.Add(this.buttonMarquee);
+            this.Controls.Add(this.buttonMember);
             this.Controls.Add(this.buttonTextCalculate);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.buttonString);
@@ -313,23 +325,23 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripLabel1;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button buttonMoney;
+        private System.Windows.Forms.Button buttonCompounding;
+        private System.Windows.Forms.Button buttonFor;
+        private System.Windows.Forms.Button buttonWhile;
+        private System.Windows.Forms.Button buttonLogic;
+        private System.Windows.Forms.Button buttonIF;
+        private System.Windows.Forms.Button buttonTicket;
+        private System.Windows.Forms.Button buttonStatistic;
+        private System.Windows.Forms.Button buttonTimer;
+        private System.Windows.Forms.Button buttonMarquee;
+        private System.Windows.Forms.Button buttonMember;
         private System.Windows.Forms.Button buttonTextCalculate;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button buttonString;
         private System.Windows.Forms.Button buttonHello;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonLotto;
     }
 }
 

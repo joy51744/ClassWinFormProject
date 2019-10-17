@@ -19,7 +19,7 @@ namespace ClassWinFormProject
 
         private void ToolStripLabel1_Click(object sender, EventArgs e)
         {
-            MainForm main = new MainForm();
+            ClassMainForm main = new ClassMainForm();
             this.Visible = false;
             main.Show();
         }

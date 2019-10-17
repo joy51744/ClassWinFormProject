@@ -17,9 +17,9 @@ namespace ClassWinFormProject
             InitializeComponent();
         }
 
-        int[] a = new int[5];
+        private int[] a = new int[5];
 
-        int i = 0;
+        private int i = 0;
 
         private void _10201_Sort_Load(object sender, EventArgs e)
         {
@@ -41,6 +41,13 @@ namespace ClassWinFormProject
         {
             Array.Sort(a);
             labelSort.Text += "\n 排序後的數字陣列: " + a[0] + " " + a[1] + " " + a[2] + " " + a[3] + " " + a[4];
+        }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            ClassMainForm main = new ClassMainForm();
+            this.Visible = false;
+            main.Show();
         }
     }
 }
