@@ -12,7 +12,7 @@ namespace ClassWinFormProject
 {
     public partial class _10201_Marquee : Form
     {
-        private string wk_txt = "我是馬顥心,歡迎參觀我的作品集,請多多指教。";
+        private string text = "我是馬顥心,歡迎參觀我的作品集,請多多指教。";
 
         public _10201_Marquee()
         {
@@ -21,12 +21,12 @@ namespace ClassWinFormProject
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            string wk_one = wk_txt.Substring(0, 1); //第一個字
-            wk_txt = wk_txt.Substring(1, wk_txt.Length - 1) + wk_one; //新字串每次從第二個字開始抓，然後把之前抓的第一個字補在最後
-            label1.Text = wk_txt;
+            string marquee = text.Substring(0, 1); //第一個字
+            text = text.Substring(1, text.Length - 1) + marquee; //新字串每次從第二個字開始抓，然後把之前抓的第一個字補在最後
+            label1.Text = text;
         }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+        
+        private void ToolStripLabel2_Click(object sender, EventArgs e)
         {
             ClassMainForm main = new ClassMainForm();
             this.Visible = false;
