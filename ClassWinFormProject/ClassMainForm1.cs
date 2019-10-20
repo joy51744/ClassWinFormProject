@@ -19,9 +19,46 @@ namespace ClassWinFormProject
 
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
-            MainForm main = new MainForm();
+            System.Diagnostics.Process.Start("PortfolioMainForm.exe");
+        }
+
+        private void buttonLotto_Click(object sender, EventArgs e)
+        {
+            _10201_Lotto lotto = new _10201_Lotto();
             this.Visible = false;
-            main.Show();
+            lotto.Show();
+        }
+
+        private void buttonName_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void buttonString_Click(object sender, EventArgs e)
+        {
+            _10201_String @string = new _10201_String();
+            this.Visible = false;
+            @string.Show();
+        }
+
+        private void buttonString1_Click(object sender, EventArgs e)
+        {
+            _10201_String1 @string = new _10201_String1();
+            this.Visible = false;
+            @string.Show();
+        }
+
+        private void buttonDateTime_Click(object sender, EventArgs e)
+        {
+            _10202_DateTime dateTime = new _10202_DateTime();
+            this.Visible = false;
+            dateTime.Show();
+        }
+
+        private void buttonSort_Click(object sender, EventArgs e)
+        {
+            _10201_Sort sort = new _10201_Sort();
+            this.Visible = false;
+            sort.Show();
         }
     }
 }

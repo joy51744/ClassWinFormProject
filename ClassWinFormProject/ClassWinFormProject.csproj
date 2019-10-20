@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="10201_Break.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_Break.Designer.cs">
+      <DependentUpon>10201_Break.cs</DependentUpon>
+    </Compile>
     <Compile Include="10201_Compounding.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10201_Compounding.Designer.cs">
       <DependentUpon>10201_Compounding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_Continue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_Continue.Designer.cs">
+      <DependentUpon>10201_Continue.cs</DependentUpon>
     </Compile>
     <Compile Include="10201_DateTime.cs">
       <SubType>Form</SubType>
@@ -63,6 +75,12 @@
     </Compile>
     <Compile Include="10201_For.Designer.cs">
       <DependentUpon>10201_For.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_For1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_For1.Designer.cs">
+      <DependentUpon>10201_For1.cs</DependentUpon>
     </Compile>
     <Compile Include="10201_Hello.cs">
       <SubType>Form</SubType>
@@ -94,6 +112,12 @@
     <Compile Include="10201_Marquee.Designer.cs">
       <DependentUpon>10201_Marquee.cs</DependentUpon>
     </Compile>
+    <Compile Include="10201_Marquee2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_Marquee2.Designer.cs">
+      <DependentUpon>10201_Marquee2.cs</DependentUpon>
+    </Compile>
     <Compile Include="10201_Member.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +147,18 @@
     </Compile>
     <Compile Include="10201_String.Designer.cs">
       <DependentUpon>10201_String.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_String1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_String1.Designer.cs">
+      <DependentUpon>10201_String1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10201_TextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10201_TextBox.Designer.cs">
+      <DependentUpon>10201_TextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="10201_TextCalculate.cs">
       <SubType>Form</SubType>
@@ -154,17 +190,29 @@
     <Compile Include="10201_While.Designer.cs">
       <DependentUpon>10201_While.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassMainForm.cs">
+    <Compile Include="10202_DateTime.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassMainForm.Designer.cs">
-      <DependentUpon>ClassMainForm.cs</DependentUpon>
+    <Compile Include="10202_DateTime.Designer.cs">
+      <DependentUpon>10202_DateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_FormColor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_FormColor.Designer.cs">
+      <DependentUpon>10202_FormColor.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassMainForm1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ClassMainForm1.Designer.cs">
       <DependentUpon>ClassMainForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassMainForm.Designer.cs">
+      <DependentUpon>ClassMainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -174,14 +222,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="10201_Break.resx">
+      <DependentUpon>10201_Break.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10201_Compounding.resx">
       <DependentUpon>10201_Compounding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_Continue.resx">
+      <DependentUpon>10201_Continue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10201_DateTime.resx">
       <DependentUpon>10201_DateTime.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10201_For.resx">
       <DependentUpon>10201_For.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_For1.resx">
+      <DependentUpon>10201_For1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10201_Hello.resx">
       <DependentUpon>10201_Hello.cs</DependentUpon>
@@ -198,6 +255,9 @@
     <EmbeddedResource Include="10201_Marquee.resx">
       <DependentUpon>10201_Marquee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10201_Marquee2.resx">
+      <DependentUpon>10201_Marquee2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10201_Member.resx">
       <DependentUpon>10201_Member.cs</DependentUpon>
     </EmbeddedResource>
@@ -212,6 +272,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="10201_String.resx">
       <DependentUpon>10201_String.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_String1.resx">
+      <DependentUpon>10201_String1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10201_TextBox.resx">
+      <DependentUpon>10201_TextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10201_TextCalculate.resx">
       <DependentUpon>10201_TextCalculate.cs</DependentUpon>
@@ -228,11 +294,17 @@
     <EmbeddedResource Include="10201_While.resx">
       <DependentUpon>10201_While.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClassMainForm.resx">
-      <DependentUpon>ClassMainForm.cs</DependentUpon>
+    <EmbeddedResource Include="10202_DateTime.resx">
+      <DependentUpon>10202_DateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_FormColor.resx">
+      <DependentUpon>10202_FormColor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassMainForm1.resx">
       <DependentUpon>ClassMainForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassMainForm.resx">
+      <DependentUpon>ClassMainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

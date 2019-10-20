@@ -25,12 +25,29 @@ namespace ClassWinFormProject
             text = text.Substring(1, text.Length - 1) + marquee; //新字串每次從第二個字開始抓，然後把之前抓的第一個字補在最後
             label1.Text = text;
         }
-        
+
         private void ToolStripLabel2_Click(object sender, EventArgs e)
         {
             ClassMainForm main = new ClassMainForm();
             this.Visible = false;
             main.Show();
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+        }
+
+        private void buttonStop_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+
+        private void 跑馬燈2ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _10201_Marquee2 marquee = new _10201_Marquee2();
+            this.Visible = false;
+            marquee.Show();
         }
     }
 }

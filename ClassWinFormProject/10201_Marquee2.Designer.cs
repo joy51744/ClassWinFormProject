@@ -1,6 +1,6 @@
 ﻿namespace ClassWinFormProject
 {
-    partial class _10201_Marquee
+    partial class _10201_Marquee2
     {
         /// <summary>
         /// Required designer variable.
@@ -36,10 +36,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonStart = new System.Windows.Forms.Button();
-            this.buttonStop = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonEnter = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(533, 25);
-            this.toolStrip1.TabIndex = 3;
+            this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
@@ -68,15 +69,15 @@
             // 跑馬燈1ToolStripMenuItem
             // 
             this.跑馬燈1ToolStripMenuItem.Name = "跑馬燈1ToolStripMenuItem";
-            this.跑馬燈1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.跑馬燈1ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.跑馬燈1ToolStripMenuItem.Text = "跑馬燈1";
+            this.跑馬燈1ToolStripMenuItem.Click += new System.EventHandler(this.跑馬燈1ToolStripMenuItem_Click);
             // 
             // 跑馬燈2ToolStripMenuItem
             // 
             this.跑馬燈2ToolStripMenuItem.Name = "跑馬燈2ToolStripMenuItem";
-            this.跑馬燈2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.跑馬燈2ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.跑馬燈2ToolStripMenuItem.Text = "跑馬燈2";
-            this.跑馬燈2ToolStripMenuItem.Click += new System.EventHandler(this.跑馬燈2ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
@@ -93,53 +94,61 @@
             this.toolStripLabel2.Name = "toolStripLabel2";
             this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel2.Text = "離開";
-            this.toolStripLabel2.Click += new System.EventHandler(this.ToolStripLabel2_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("標楷體", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(11, 125);
+            this.label1.Location = new System.Drawing.Point(11, 138);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 24);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.label1.Size = new System.Drawing.Size(504, 24);
+            this.label1.TabIndex = 5;
             // 
-            // buttonStart
+            // timer1
             // 
-            this.buttonStart.Location = new System.Drawing.Point(15, 189);
-            this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(75, 23);
-            this.buttonStart.TabIndex = 5;
-            this.buttonStart.Text = "開始";
-            this.buttonStart.UseVisualStyleBackColor = true;
-            this.buttonStart.Click += new System.EventHandler(this.buttonStart_Click);
+            this.timer1.Interval = 350;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // buttonStop
+            // textBox1
             // 
-            this.buttonStop.Location = new System.Drawing.Point(140, 189);
-            this.buttonStop.Name = "buttonStop";
-            this.buttonStop.Size = new System.Drawing.Size(75, 23);
-            this.buttonStop.TabIndex = 6;
-            this.buttonStop.Text = "暫停";
-            this.buttonStop.UseVisualStyleBackColor = true;
-            this.buttonStop.Click += new System.EventHandler(this.buttonStop_Click);
+            this.textBox1.Location = new System.Drawing.Point(184, 83);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(230, 22);
+            this.textBox1.TabIndex = 6;
             // 
-            // _10201_Marquee
+            // buttonEnter
+            // 
+            this.buttonEnter.Location = new System.Drawing.Point(440, 83);
+            this.buttonEnter.Name = "buttonEnter";
+            this.buttonEnter.Size = new System.Drawing.Size(75, 21);
+            this.buttonEnter.TabIndex = 7;
+            this.buttonEnter.Text = "確認";
+            this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(11, 89);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "請輸入你想輸出的文字";
+            // 
+            // _10201_Marquee2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(533, 300);
-            this.Controls.Add(this.buttonStop);
-            this.Controls.Add(this.buttonStart);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.buttonEnter);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "_10201_Marquee";
+            this.Name = "_10201_Marquee2";
             this.Text = "C#課程專案 | 跑馬燈";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -149,16 +158,18 @@
         }
 
         #endregion
+
         private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ToolStripDropDownButton toolStripLabel1;
-        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.ToolStripMenuItem 跑馬燈1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 跑馬燈2ToolStripMenuItem;
-        private System.Windows.Forms.Button buttonStart;
-        private System.Windows.Forms.Button buttonStop;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonEnter;
+        private System.Windows.Forms.Label label2;
     }
 }

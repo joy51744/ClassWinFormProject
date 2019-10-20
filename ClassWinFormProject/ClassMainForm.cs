@@ -17,20 +17,6 @@ namespace ClassWinFormProject
             InitializeComponent();
         }
 
-        private void toolStripLabel2_Click(object sender, EventArgs e)
-        {
-            MainForm main = new MainForm();
-            this.Visible = false;
-            main.Show();
-        }
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            ClassMainForm1 main = new ClassMainForm1();
-            this.Visible = false;
-            main.Show();
-        }
-
         private void buttonHello_Click(object sender, EventArgs e)
         {
             _10201_Hello hello = new _10201_Hello();
@@ -38,53 +24,11 @@ namespace ClassWinFormProject
             hello.Show();
         }
 
-        private void ButtonString_Click(object sender, EventArgs e)
+        private void buttonTextCalculate_Click(object sender, EventArgs e)
         {
-            _10201_String main = new _10201_String();
+            _10201_TextCalculate calculate = new _10201_TextCalculate();
             this.Visible = false;
-            main.Show();
-        }
-
-        private void ButtonTextCalculate_Click(object sender, EventArgs e)
-        {
-            _10201_TextCalculate textCalculate = new _10201_TextCalculate();
-            this.Visible = false;
-            textCalculate.Show();
-        }
-
-        private void ButtonSort_Click(object sender, EventArgs e)
-        {
-            _10201_Sort sort = new _10201_Sort();
-            this.Visible = false;
-            sort.Show();
-        }
-
-        private void buttonLotto_Click(object sender, EventArgs e)
-        {
-            _10201_Lotto lotto = new _10201_Lotto();
-            this.Visible = false;
-            lotto.Show();
-        }
-
-        private void buttonMember_Click(object sender, EventArgs e)
-        {
-            _10201_Member member = new _10201_Member();
-            this.Visible = false;
-            member.Show();
-        }
-
-        private void buttonMarquee_Click(object sender, EventArgs e)
-        {
-            _10201_Marquee marquee = new _10201_Marquee();
-            this.Visible = false;
-            marquee.Show();
-        }
-
-        private void buttonTimer_Click(object sender, EventArgs e)
-        {
-            _10201_Timer timer = new _10201_Timer();
-            this.Visible = false;
-            timer.Show();
+            calculate.Show();
         }
 
         private void buttonStatistic_Click(object sender, EventArgs e)
@@ -94,6 +38,20 @@ namespace ClassWinFormProject
             statistic.Show();
         }
 
+        private void buttonTextBox_Click(object sender, EventArgs e)
+        {
+            _10201_TextBox textBox = new _10201_TextBox();
+            this.Visible = false;
+            textBox.Show();
+        }
+
+        private void button_Click(object sender, EventArgs e)
+        {
+            _10201_Member member = new _10201_Member();
+            this.Visible = false;
+            member.Show();
+        }
+
         private void buttonTicket_Click(object sender, EventArgs e)
         {
             _10201_Ticket ticket = new _10201_Ticket();
@@ -101,11 +59,18 @@ namespace ClassWinFormProject
             ticket.Show();
         }
 
-        private void buttonIF_Click(object sender, EventArgs e)
+        private void buttonTimer_Click(object sender, EventArgs e)
         {
-            _10201_IF main = new _10201_IF();
+            _10201_Timer timer = new _10201_Timer();
             this.Visible = false;
-            main.Show();
+            timer.Show();
+        }
+
+        private void buttonMarquee_Click(object sender, EventArgs e)
+        {
+            _10201_Marquee marquee = new _10201_Marquee();
+            this.Visible = false;
+            marquee.Show();
         }
 
         private void buttonLogic_Click(object sender, EventArgs e)
@@ -113,6 +78,13 @@ namespace ClassWinFormProject
             _10201_Logic logic = new _10201_Logic();
             this.Visible = false;
             logic.Show();
+        }
+
+        private void buttonIf_Click(object sender, EventArgs e)
+        {
+            _10201_IF iF = new _10201_IF();
+            this.Visible = false;
+            iF.Show();
         }
 
         private void buttonWhile_Click(object sender, EventArgs e)
@@ -129,6 +101,13 @@ namespace ClassWinFormProject
             @for.Show();
         }
 
+        private void buttonFor1_Click(object sender, EventArgs e)
+        {
+            _10201_For1 @for = new _10201_For1();
+            this.Visible = false;
+            @for.Show();
+        }
+
         private void buttonCompounding_Click(object sender, EventArgs e)
         {
             _10201_Compounding compounding = new _10201_Compounding();
@@ -141,6 +120,21 @@ namespace ClassWinFormProject
             _10201_Money money = new _10201_Money();
             this.Visible = false;
             money.Show();
+        }
+
+        private void buttonContinue_Click(object sender, EventArgs e)
+        {
+            _10201_Continue @continue = new _10201_Continue();
+            this.Visible = false;
+            @continue.Show();
+        }
+
+        private void toolStripLabel2_Click(object sender, EventArgs e)
+        {
+            MainForm main = new MainForm();
+            this.Visible = false;
+            main.Show();
+            //System.Diagnostics.Process.Start("PortfolioMainForm.exe");
         }
     }
 }
