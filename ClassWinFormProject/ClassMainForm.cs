@@ -136,5 +136,12 @@ namespace ClassWinFormProject
             main.Show();
             //System.Diagnostics.Process.Start("PortfolioMainForm.exe");
         }
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            ClassMainForm1 main = new ClassMainForm1();
+            this.Visible = false;
+            main.Show();
+        }
     }
 }

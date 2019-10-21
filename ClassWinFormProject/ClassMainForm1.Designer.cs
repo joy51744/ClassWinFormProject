@@ -183,7 +183,7 @@
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(130, 45);
             this.buttonSort.TabIndex = 102;
-            this.buttonSort.Text = "數字排序";
+            this.buttonSort.Text = "陣列排序";
             this.buttonSort.UseVisualStyleBackColor = true;
             this.buttonSort.Click += new System.EventHandler(this.buttonSort_Click);
             // 

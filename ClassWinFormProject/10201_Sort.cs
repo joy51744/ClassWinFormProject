@@ -40,14 +40,21 @@ namespace ClassWinFormProject
         private void ButtonSort_Click(object sender, EventArgs e)
         {
             Array.Sort(a);
-            labelSort.Text += "\n 排序後的數字陣列: " + a[0] + " " + a[1] + " " + a[2] + " " + a[3] + " " + a[4];
+            labelSort.Text += "\r\n 排序後的數字陣列: " + a[0] + " " + a[1] + " " + a[2] + " " + a[3] + " " + a[4];
         }
 
-        private void toolStripLabel1_Click(object sender, EventArgs e)
+        private void toolStripLabel2_Click(object sender, EventArgs e)
         {
             ClassMainForm main = new ClassMainForm();
             this.Visible = false;
             main.Show();
+        }
+
+        private void 氣泡排序ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _10202_BubbleSort bubbleSort = new _10202_BubbleSort();
+            this.Visible = false;
+            bubbleSort.Show();
         }
     }
 }
