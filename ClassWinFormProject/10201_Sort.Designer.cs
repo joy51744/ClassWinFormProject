@@ -30,18 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.陣列排序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.氣泡排序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.labelSort = new System.Windows.Forms.Label();
             this.buttonSort = new System.Windows.Forms.Button();
-            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.陣列排序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.氣泡排序ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,28 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.陣列排序ToolStripMenuItem,
+            this.氣泡排序ToolStripMenuItem});
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel1.Text = "專案";
+            // 
+            // 陣列排序ToolStripMenuItem
+            // 
+            this.陣列排序ToolStripMenuItem.Name = "陣列排序ToolStripMenuItem";
+            this.陣列排序ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.陣列排序ToolStripMenuItem.Text = "陣列排序";
+            // 
+            // 氣泡排序ToolStripMenuItem
+            // 
+            this.氣泡排序ToolStripMenuItem.Name = "氣泡排序ToolStripMenuItem";
+            this.氣泡排序ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.氣泡排序ToolStripMenuItem.Text = "氣泡排序";
+            this.氣泡排序ToolStripMenuItem.Click += new System.EventHandler(this.氣泡排序ToolStripMenuItem_Click);
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -78,6 +100,23 @@
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel2.Text = "離開";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
             // 
             // textBox1
             // 
@@ -114,45 +153,6 @@
             this.buttonSort.UseVisualStyleBackColor = true;
             this.buttonSort.Click += new System.EventHandler(this.ButtonSort_Click);
             // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
-            this.toolStripLabel2.Text = "離開";
-            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.陣列排序ToolStripMenuItem,
-            this.氣泡排序ToolStripMenuItem});
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
-            this.toolStripLabel1.Text = "專案";
-            // 
-            // 陣列排序ToolStripMenuItem
-            // 
-            this.陣列排序ToolStripMenuItem.Name = "陣列排序ToolStripMenuItem";
-            this.陣列排序ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.陣列排序ToolStripMenuItem.Text = "陣列排序";
-            // 
-            // 氣泡排序ToolStripMenuItem
-            // 
-            this.氣泡排序ToolStripMenuItem.Name = "氣泡排序ToolStripMenuItem";
-            this.氣泡排序ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.氣泡排序ToolStripMenuItem.Text = "氣泡排序";
-            this.氣泡排序ToolStripMenuItem.Click += new System.EventHandler(this.氣泡排序ToolStripMenuItem_Click);
-            // 
             // _10201_Sort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -165,7 +165,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.label1);
             this.Name = "_10201_Sort";
-            this.Text = "C#課程專案 | 數字排序";
+            this.Text = "C#課程專案 | 陣列排序";
             this.Load += new System.EventHandler(this._10201_Sort_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();

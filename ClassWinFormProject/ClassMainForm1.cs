@@ -60,5 +60,54 @@ namespace ClassWinFormProject
             this.Visible = false;
             sort.Show();
         }
+
+        private void buttonSlideShow_Click(object sender, EventArgs e)
+        {
+            _10202_SlideShow slideShow = new _10202_SlideShow();
+            this.Visible = false;
+            slideShow.Show();
+        }
+
+        private void buttonWatermark_Click(object sender, EventArgs e)
+        {
+            _10202_Watermark watermark = new _10202_Watermark();
+            this.Visible = false;
+            watermark.Show();
+        }
+
+        private void buttonFornColor_Click(object sender, EventArgs e)
+        {
+            _10202_FormColor formColor = new _10202_FormColor();
+            this.Visible = false;
+            formColor.Show();
+        }
+
+        private void buttonBrowser_Click(object sender, EventArgs e)
+        {
+            _10202_Browser browser = new _10202_Browser();
+            this.Visible = false;
+            browser.Show();
+        }
+
+        private void buttonOpen_Click(object sender, EventArgs e)
+        {
+            _10202_Open open = new _10202_Open();
+            this.Visible = false;
+            open.Show();
+        }
+
+        private void buttonProgress_Click(object sender, EventArgs e)
+        {
+            _10202_Progress progress = new _10202_Progress();
+            this.Visible = false;
+            progress.Show();
+        }
+
+        private void buttonConverter_Click(object sender, EventArgs e)
+        {
+            _10202_Converter converter = new _10202_Converter();
+            this.Visible = false;
+            converter.Show();
+        }
     }
 }

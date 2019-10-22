@@ -29,20 +29,24 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.textBoxAfter = new System.Windows.Forms.TextBox();
             this.textBoxBefore = new System.Windows.Forms.TextBox();
             this.buttonSort = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBoxSortAfter = new System.Windows.Forms.TextBox();
-            this.textBoxSortBefore = new System.Windows.Forms.TextBox();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.buttonLowerSort = new System.Windows.Forms.Button();
+            this.textBoxSortAfter = new System.Windows.Forms.TextBox();
+            this.textBoxSortBefore = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -50,6 +54,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxAfter);
             this.groupBox1.Controls.Add(this.textBoxBefore);
             this.groupBox1.Controls.Add(this.buttonSort);
@@ -59,6 +64,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "由小大大";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 277);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 12);
+            this.label1.TabIndex = 6;
             // 
             // textBoxAfter
             // 
@@ -103,6 +116,28 @@
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem2,
+            this.toolStripMenuItem3});
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel1.Text = "專案";
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Text = "陣列排序";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Text = "氣泡排序";
+            // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
@@ -113,8 +148,26 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel2.Text = "離開";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.buttonLowerSort);
             this.groupBox2.Controls.Add(this.textBoxSortAfter);
             this.groupBox2.Controls.Add(this.textBoxSortBefore);
@@ -124,6 +177,24 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "由大到小";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(18, 277);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 12);
+            this.label2.TabIndex = 5;
+            // 
+            // buttonLowerSort
+            // 
+            this.buttonLowerSort.Location = new System.Drawing.Point(158, 272);
+            this.buttonLowerSort.Name = "buttonLowerSort";
+            this.buttonLowerSort.Size = new System.Drawing.Size(75, 23);
+            this.buttonLowerSort.TabIndex = 4;
+            this.buttonLowerSort.Text = "排序";
+            this.buttonLowerSort.UseVisualStyleBackColor = true;
+            this.buttonLowerSort.Click += new System.EventHandler(this.ButtonLowerSort_Click);
             // 
             // textBoxSortAfter
             // 
@@ -143,38 +214,6 @@
             this.textBoxSortBefore.Size = new System.Drawing.Size(330, 61);
             this.textBoxSortBefore.TabIndex = 2;
             // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
-            this.toolStripLabel1.Text = "專案";
-            // 
-            // toolStripLabel2
-            // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
-            this.toolStripLabel2.Text = "離開";
-            // 
-            // toolStripSeparator3
-            // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-            // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
-            // 
-            // buttonLowerSort
-            // 
-            this.buttonLowerSort.Location = new System.Drawing.Point(158, 272);
-            this.buttonLowerSort.Name = "buttonLowerSort";
-            this.buttonLowerSort.Size = new System.Drawing.Size(75, 23);
-            this.buttonLowerSort.TabIndex = 4;
-            this.buttonLowerSort.Text = "排序";
-            this.buttonLowerSort.UseVisualStyleBackColor = true;
-            this.buttonLowerSort.Click += new System.EventHandler(this.ButtonLowerSort_Click);
-            // 
             // _10202_BubbleSort
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -184,7 +223,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.groupBox1);
             this.Name = "_10202_BubbleSort";
-            this.Text = "C#課程專案 | 氣泡排序法";
+            this.Text = "C#課程專案 | 氣泡排序";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
@@ -213,5 +252,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Button buttonLowerSort;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
     }
 }

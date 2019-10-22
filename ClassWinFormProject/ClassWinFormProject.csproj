@@ -190,11 +190,23 @@
     <Compile Include="10201_While.Designer.cs">
       <DependentUpon>10201_While.cs</DependentUpon>
     </Compile>
+    <Compile Include="10202_Browser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Browser.Designer.cs">
+      <DependentUpon>10202_Browser.cs</DependentUpon>
+    </Compile>
     <Compile Include="10202_BubbleSort.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10202_BubbleSort.Designer.cs">
       <DependentUpon>10202_BubbleSort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_Converter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Converter.Designer.cs">
+      <DependentUpon>10202_Converter.cs</DependentUpon>
     </Compile>
     <Compile Include="10202_DateTime.cs">
       <SubType>Form</SubType>
@@ -207,6 +219,36 @@
     </Compile>
     <Compile Include="10202_FormColor.Designer.cs">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_Open.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Open.Designer.cs">
+      <DependentUpon>10202_Open.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_POS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_POS.Designer.cs">
+      <DependentUpon>10202_POS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Progress.Designer.cs">
+      <DependentUpon>10202_Progress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_SlideShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_SlideShow.Designer.cs">
+      <DependentUpon>10202_SlideShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_Watermark.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Watermark.Designer.cs">
+      <DependentUpon>10202_Watermark.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassMainForm1.cs">
       <SubType>Form</SubType>
@@ -227,6 +269,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Progress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="10201_Break.resx">
       <DependentUpon>10201_Break.cs</DependentUpon>
@@ -309,6 +357,9 @@
     <EmbeddedResource Include="10202_FormColor.resx">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10202_SlideShow.resx">
+      <DependentUpon>10202_SlideShow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassMainForm1.resx">
       <DependentUpon>ClassMainForm1.cs</DependentUpon>
     </EmbeddedResource>
@@ -326,6 +377,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -339,6 +391,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\15.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
