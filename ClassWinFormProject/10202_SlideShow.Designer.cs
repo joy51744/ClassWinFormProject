@@ -34,6 +34,7 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -48,7 +49,8 @@
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -82,7 +84,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(94, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(95, 22);
             this.toolStripLabel1.Text = "toolStripLabel1";
             // 
             // toolStripSeparator1
@@ -98,17 +100,22 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ClassWinFormProject.Properties.Resources._01;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 49);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(660, 390);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ClassWinFormProject.Properties.Resources._02;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox2.Location = new System.Drawing.Point(12, 49);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(660, 390);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -118,7 +125,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::ClassWinFormProject.Properties.Resources._03;
-            this.pictureBox3.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox3.Location = new System.Drawing.Point(12, 49);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(660, 390);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -128,7 +135,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::ClassWinFormProject.Properties.Resources._04;
-            this.pictureBox4.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox4.Location = new System.Drawing.Point(12, 49);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(660, 390);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -138,7 +145,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::ClassWinFormProject.Properties.Resources._05;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 49);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(660, 390);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -148,7 +155,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::ClassWinFormProject.Properties.Resources._06;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 49);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(660, 390);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -158,7 +165,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::ClassWinFormProject.Properties.Resources._07;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 49);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(660, 390);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -168,7 +175,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::ClassWinFormProject.Properties.Resources._08;
-            this.pictureBox8.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox8.Location = new System.Drawing.Point(12, 49);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(660, 390);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +185,7 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::ClassWinFormProject.Properties.Resources._09;
-            this.pictureBox9.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox9.Location = new System.Drawing.Point(12, 49);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(660, 390);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -188,7 +195,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::ClassWinFormProject.Properties.Resources._10;
-            this.pictureBox10.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox10.Location = new System.Drawing.Point(12, 49);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(660, 390);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -198,7 +205,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::ClassWinFormProject.Properties.Resources._11;
-            this.pictureBox11.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox11.Location = new System.Drawing.Point(12, 49);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(660, 390);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +215,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::ClassWinFormProject.Properties.Resources._12;
-            this.pictureBox12.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox12.Location = new System.Drawing.Point(12, 49);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(660, 390);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,7 +225,7 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::ClassWinFormProject.Properties.Resources._13;
-            this.pictureBox13.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox13.Location = new System.Drawing.Point(12, 49);
             this.pictureBox13.Name = "pictureBox13";
             this.pictureBox13.Size = new System.Drawing.Size(660, 390);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -228,7 +235,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::ClassWinFormProject.Properties.Resources._14;
-            this.pictureBox14.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox14.Location = new System.Drawing.Point(12, 49);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(660, 390);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -238,16 +245,30 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::ClassWinFormProject.Properties.Resources._15;
-            this.pictureBox15.Location = new System.Drawing.Point(12, 38);
+            this.pictureBox15.Location = new System.Drawing.Point(12, 49);
             this.pictureBox15.Name = "pictureBox15";
             this.pictureBox15.Size = new System.Drawing.Size(660, 390);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 15;
             this.pictureBox15.TabStop = false;
             // 
-            // timer1
+            // label1
             // 
-            this.timer1.Interval = 1000;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 444);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(240, 12);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "圖片來源:https://www.bomb01.com/article/20663";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
+            this.label2.Location = new System.Drawing.Point(13, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 12);
+            this.label2.TabIndex = 17;
             // 
             // _10202_SlideShow
             // 
@@ -255,6 +276,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox15);
             this.Controls.Add(this.pictureBox14);
             this.Controls.Add(this.pictureBox13);
@@ -265,14 +288,15 @@
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.toolStrip1);
             this.Name = "_10202_SlideShow";
-            this.Text = "_10202_SlideShow";
+            this.Text = "C#課程專案 | 圖片輪播";
+            this.Load += new System.EventHandler(this._10202_SlideShow_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -302,6 +326,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
@@ -316,6 +341,7 @@
         private System.Windows.Forms.PictureBox pictureBox13;
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
