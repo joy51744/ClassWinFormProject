@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // _10202_Progress
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "_10202_Progress";
+            this.Name = "_10202_Progress";
+            this.Text = "C#課程專案 | 進度條";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

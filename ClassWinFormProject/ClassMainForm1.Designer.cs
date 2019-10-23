@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassMainForm1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
-            this.buttonPOS = new System.Windows.Forms.Button();
-            this.buttonConverter = new System.Windows.Forms.Button();
-            this.buttonProgress = new System.Windows.Forms.Button();
-            this.buttonOpen = new System.Windows.Forms.Button();
-            this.buttonBrowser = new System.Windows.Forms.Button();
             this.buttonFornColor = new System.Windows.Forms.Button();
-            this.buttonWatermark = new System.Windows.Forms.Button();
             this.buttonSlideShow = new System.Windows.Forms.Button();
             this.buttonSort = new System.Windows.Forms.Button();
             this.buttonString1 = new System.Windows.Forms.Button();
             this.buttonDateTime = new System.Windows.Forms.Button();
             this.buttonString = new System.Windows.Forms.Button();
-            this.buttonName = new System.Windows.Forms.Button();
             this.buttonLotto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonPOS = new System.Windows.Forms.Button();
+            this.buttonConverter = new System.Windows.Forms.Button();
+            this.buttonProgress = new System.Windows.Forms.Button();
+            this.buttonOpen = new System.Windows.Forms.Button();
+            this.buttonBrowser = new System.Windows.Forms.Button();
+            this.buttonWatermark = new System.Windows.Forms.Button();
+            this.buttonName = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,60 +97,6 @@
             this.toolStripLabel2.Text = "離開";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
-            // buttonPOS
-            // 
-            this.buttonPOS.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonPOS.Location = new System.Drawing.Point(645, 193);
-            this.buttonPOS.Name = "buttonPOS";
-            this.buttonPOS.Size = new System.Drawing.Size(130, 45);
-            this.buttonPOS.TabIndex = 110;
-            this.buttonPOS.Text = "POS系統";
-            this.buttonPOS.UseVisualStyleBackColor = true;
-            // 
-            // buttonConverter
-            // 
-            this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonConverter.Location = new System.Drawing.Point(643, 97);
-            this.buttonConverter.Name = "buttonConverter";
-            this.buttonConverter.Size = new System.Drawing.Size(130, 45);
-            this.buttonConverter.TabIndex = 109;
-            this.buttonConverter.Text = "轉換器";
-            this.buttonConverter.UseVisualStyleBackColor = true;
-            this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
-            // 
-            // buttonProgress
-            // 
-            this.buttonProgress.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonProgress.Location = new System.Drawing.Point(437, 383);
-            this.buttonProgress.Name = "buttonProgress";
-            this.buttonProgress.Size = new System.Drawing.Size(130, 45);
-            this.buttonProgress.TabIndex = 108;
-            this.buttonProgress.Text = "進度條";
-            this.buttonProgress.UseVisualStyleBackColor = true;
-            this.buttonProgress.Click += new System.EventHandler(this.buttonProgress_Click);
-            // 
-            // buttonOpen
-            // 
-            this.buttonOpen.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonOpen.Location = new System.Drawing.Point(437, 288);
-            this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(130, 45);
-            this.buttonOpen.TabIndex = 107;
-            this.buttonOpen.Text = "開啟文件";
-            this.buttonOpen.UseVisualStyleBackColor = true;
-            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
-            // 
-            // buttonBrowser
-            // 
-            this.buttonBrowser.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonBrowser.Location = new System.Drawing.Point(437, 193);
-            this.buttonBrowser.Name = "buttonBrowser";
-            this.buttonBrowser.Size = new System.Drawing.Size(130, 45);
-            this.buttonBrowser.TabIndex = 106;
-            this.buttonBrowser.Text = "簡易瀏覽器";
-            this.buttonBrowser.UseVisualStyleBackColor = true;
-            this.buttonBrowser.Click += new System.EventHandler(this.buttonBrowser_Click);
-            // 
             // buttonFornColor
             // 
             this.buttonFornColor.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -160,17 +107,6 @@
             this.buttonFornColor.Text = "視窗顏色變換";
             this.buttonFornColor.UseVisualStyleBackColor = true;
             this.buttonFornColor.Click += new System.EventHandler(this.buttonFornColor_Click);
-            // 
-            // buttonWatermark
-            // 
-            this.buttonWatermark.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonWatermark.Location = new System.Drawing.Point(231, 383);
-            this.buttonWatermark.Name = "buttonWatermark";
-            this.buttonWatermark.Size = new System.Drawing.Size(130, 45);
-            this.buttonWatermark.TabIndex = 104;
-            this.buttonWatermark.Text = "圖片浮水印";
-            this.buttonWatermark.UseVisualStyleBackColor = true;
-            this.buttonWatermark.Click += new System.EventHandler(this.buttonWatermark_Click);
             // 
             // buttonSlideShow
             // 
@@ -227,17 +163,6 @@
             this.buttonString.UseVisualStyleBackColor = true;
             this.buttonString.Click += new System.EventHandler(this.buttonString_Click);
             // 
-            // buttonName
-            // 
-            this.buttonName.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonName.Location = new System.Drawing.Point(25, 193);
-            this.buttonName.Name = "buttonName";
-            this.buttonName.Size = new System.Drawing.Size(130, 45);
-            this.buttonName.TabIndex = 98;
-            this.buttonName.Text = "點名系統";
-            this.buttonName.UseVisualStyleBackColor = true;
-            this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
-            // 
             // buttonLotto
             // 
             this.buttonLotto.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
@@ -258,6 +183,88 @@
             this.label1.Size = new System.Drawing.Size(240, 29);
             this.label1.TabIndex = 96;
             this.label1.Text = "C# Class Project";
+            // 
+            // buttonPOS
+            // 
+            this.buttonPOS.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonPOS.BackgroundImage")));
+            this.buttonPOS.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonPOS.Location = new System.Drawing.Point(645, 193);
+            this.buttonPOS.Name = "buttonPOS";
+            this.buttonPOS.Size = new System.Drawing.Size(130, 45);
+            this.buttonPOS.TabIndex = 110;
+            this.buttonPOS.Text = "POS系統";
+            this.buttonPOS.UseVisualStyleBackColor = true;
+            // 
+            // buttonConverter
+            // 
+            this.buttonConverter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonConverter.BackgroundImage")));
+            this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonConverter.Location = new System.Drawing.Point(643, 97);
+            this.buttonConverter.Name = "buttonConverter";
+            this.buttonConverter.Size = new System.Drawing.Size(130, 45);
+            this.buttonConverter.TabIndex = 109;
+            this.buttonConverter.Text = "轉換器";
+            this.buttonConverter.UseVisualStyleBackColor = true;
+            this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
+            // 
+            // buttonProgress
+            // 
+            this.buttonProgress.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonProgress.BackgroundImage")));
+            this.buttonProgress.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonProgress.Location = new System.Drawing.Point(437, 383);
+            this.buttonProgress.Name = "buttonProgress";
+            this.buttonProgress.Size = new System.Drawing.Size(130, 45);
+            this.buttonProgress.TabIndex = 108;
+            this.buttonProgress.Text = "進度條";
+            this.buttonProgress.UseVisualStyleBackColor = true;
+            this.buttonProgress.Click += new System.EventHandler(this.buttonProgress_Click);
+            // 
+            // buttonOpen
+            // 
+            this.buttonOpen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonOpen.BackgroundImage")));
+            this.buttonOpen.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonOpen.Location = new System.Drawing.Point(437, 288);
+            this.buttonOpen.Name = "buttonOpen";
+            this.buttonOpen.Size = new System.Drawing.Size(130, 45);
+            this.buttonOpen.TabIndex = 107;
+            this.buttonOpen.Text = "開啟文件";
+            this.buttonOpen.UseVisualStyleBackColor = true;
+            this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
+            // 
+            // buttonBrowser
+            // 
+            this.buttonBrowser.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonBrowser.BackgroundImage")));
+            this.buttonBrowser.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonBrowser.Location = new System.Drawing.Point(437, 193);
+            this.buttonBrowser.Name = "buttonBrowser";
+            this.buttonBrowser.Size = new System.Drawing.Size(130, 45);
+            this.buttonBrowser.TabIndex = 106;
+            this.buttonBrowser.Text = "簡易瀏覽器";
+            this.buttonBrowser.UseVisualStyleBackColor = true;
+            this.buttonBrowser.Click += new System.EventHandler(this.buttonBrowser_Click);
+            // 
+            // buttonWatermark
+            // 
+            this.buttonWatermark.BackgroundImage = global::ClassWinFormProject.Properties.Resources._01;
+            this.buttonWatermark.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonWatermark.Location = new System.Drawing.Point(231, 383);
+            this.buttonWatermark.Name = "buttonWatermark";
+            this.buttonWatermark.Size = new System.Drawing.Size(130, 45);
+            this.buttonWatermark.TabIndex = 104;
+            this.buttonWatermark.Text = "圖片浮水印";
+            this.buttonWatermark.UseVisualStyleBackColor = true;
+            this.buttonWatermark.Click += new System.EventHandler(this.buttonWatermark_Click);
+            // 
+            // buttonName
+            // 
+            this.buttonName.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonName.Location = new System.Drawing.Point(25, 193);
+            this.buttonName.Name = "buttonName";
+            this.buttonName.Size = new System.Drawing.Size(130, 45);
+            this.buttonName.TabIndex = 98;
+            this.buttonName.Text = "點名系統";
+            this.buttonName.UseVisualStyleBackColor = true;
+            this.buttonName.Click += new System.EventHandler(this.buttonName_Click);
             // 
             // ClassMainForm1
             // 

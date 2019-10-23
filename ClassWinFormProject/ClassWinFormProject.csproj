@@ -220,6 +220,12 @@
     <Compile Include="10202_FormColor.Designer.cs">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </Compile>
+    <Compile Include="10202_Name.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Name.Designer.cs">
+      <DependentUpon>10202_Name.cs</DependentUpon>
+    </Compile>
     <Compile Include="10202_Open.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,8 +354,14 @@
     <EmbeddedResource Include="10201_While.resx">
       <DependentUpon>10201_While.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10202_Browser.resx">
+      <DependentUpon>10202_Browser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10202_BubbleSort.resx">
       <DependentUpon>10202_BubbleSort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_Converter.resx">
+      <DependentUpon>10202_Converter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10202_DateTime.resx">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
@@ -357,8 +369,23 @@
     <EmbeddedResource Include="10202_FormColor.resx">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10202_Name.resx">
+      <DependentUpon>10202_Name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_Open.resx">
+      <DependentUpon>10202_Open.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_POS.resx">
+      <DependentUpon>10202_POS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_Progress.resx">
+      <DependentUpon>10202_Progress.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10202_SlideShow.resx">
       <DependentUpon>10202_SlideShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_Watermark.resx">
+      <DependentUpon>10202_Watermark.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassMainForm1.resx">
       <DependentUpon>ClassMainForm1.cs</DependentUpon>

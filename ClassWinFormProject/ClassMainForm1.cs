@@ -31,6 +31,9 @@ namespace ClassWinFormProject
 
         private void buttonName_Click(object sender, EventArgs e)
         {
+            _10202_Name name = new _10202_Name();
+            this.Visible = false;
+            name.Show();
         }
 
         private void buttonString_Click(object sender, EventArgs e)
