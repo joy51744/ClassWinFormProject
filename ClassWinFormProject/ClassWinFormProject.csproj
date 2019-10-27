@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CircularProgressBar, Version=2.7.0.7, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\CircularProgressBar.2.7.0.7\lib\net40\CircularProgressBar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -44,6 +47,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WinFormAnimation, Version=1.6.0.4, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
+      <HintPath>..\packages\WinFormAnimation.1.6.0.4\lib\net40\WinFormAnimation.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="10201_Break.cs">
@@ -214,17 +220,47 @@
     <Compile Include="10202_DateTime.Designer.cs">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
     </Compile>
+    <Compile Include="10202_DateTimeConvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_DateTimeConvert.Designer.cs">
+      <DependentUpon>10202_DateTimeConvert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_Draw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Draw.Designer.cs">
+      <DependentUpon>10202_Draw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_FormatConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_FormatConverter.Designer.cs">
+      <DependentUpon>10202_FormatConverter.cs</DependentUpon>
+    </Compile>
     <Compile Include="10202_FormColor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10202_FormColor.Designer.cs">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </Compile>
+    <Compile Include="10202_LanguageConvert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_LanguageConvert.Designer.cs">
+      <DependentUpon>10202_LanguageConvert.cs</DependentUpon>
+    </Compile>
     <Compile Include="10202_Name.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10202_Name.Designer.cs">
       <DependentUpon>10202_Name.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Notepad.Designer.cs">
+      <DependentUpon>10202_Notepad.cs</DependentUpon>
     </Compile>
     <Compile Include="10202_Open.cs">
       <SubType>Form</SubType>
@@ -244,11 +280,23 @@
     <Compile Include="10202_Progress.Designer.cs">
       <DependentUpon>10202_Progress.cs</DependentUpon>
     </Compile>
+    <Compile Include="10202_Progress2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_Progress2.Designer.cs">
+      <DependentUpon>10202_Progress2.cs</DependentUpon>
+    </Compile>
     <Compile Include="10202_SlideShow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10202_SlideShow.Designer.cs">
       <DependentUpon>10202_SlideShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="10202_UnitConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="10202_UnitConverter.Designer.cs">
+      <DependentUpon>10202_UnitConverter.cs</DependentUpon>
     </Compile>
     <Compile Include="10202_Watermark.cs">
       <SubType>Form</SubType>
@@ -366,11 +414,26 @@
     <EmbeddedResource Include="10202_DateTime.resx">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10202_DateTimeConvert.resx">
+      <DependentUpon>10202_DateTimeConvert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_Draw.resx">
+      <DependentUpon>10202_Draw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_FormatConverter.resx">
+      <DependentUpon>10202_FormatConverter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10202_FormColor.resx">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10202_LanguageConvert.resx">
+      <DependentUpon>10202_LanguageConvert.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10202_Name.resx">
       <DependentUpon>10202_Name.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_Notepad.resx">
+      <DependentUpon>10202_Notepad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10202_Open.resx">
       <DependentUpon>10202_Open.cs</DependentUpon>
@@ -381,8 +444,14 @@
     <EmbeddedResource Include="10202_Progress.resx">
       <DependentUpon>10202_Progress.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="10202_Progress2.resx">
+      <DependentUpon>10202_Progress2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="10202_SlideShow.resx">
       <DependentUpon>10202_SlideShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="10202_UnitConverter.resx">
+      <DependentUpon>10202_UnitConverter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10202_Watermark.resx">
       <DependentUpon>10202_Watermark.cs</DependentUpon>
@@ -406,6 +475,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

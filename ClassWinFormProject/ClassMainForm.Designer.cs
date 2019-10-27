@@ -137,7 +137,7 @@
             // buttonLogic
             // 
             this.buttonLogic.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonLogic.Location = new System.Drawing.Point(437, 97);
+            this.buttonLogic.Location = new System.Drawing.Point(437, 98);
             this.buttonLogic.Name = "buttonLogic";
             this.buttonLogic.Size = new System.Drawing.Size(130, 45);
             this.buttonLogic.TabIndex = 123;
@@ -236,10 +236,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("王漢宗顏楷體繁", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.label1.Location = new System.Drawing.Point(300, 40);
+            this.label1.Font = new System.Drawing.Font("Calisto MT", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(290, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 29);
+            this.label1.Size = new System.Drawing.Size(221, 34);
             this.label1.TabIndex = 114;
             this.label1.Text = "C# Class Project";
             // 
@@ -256,7 +256,7 @@
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
             this.toolStripMenuItem2.Text = "10201";
             // 
             // toolStripLabel1
@@ -271,7 +271,7 @@
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(109, 22);
             this.toolStripMenuItem3.Text = "10202";
             this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 

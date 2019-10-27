@@ -1,6 +1,6 @@
 ﻿namespace ClassWinFormProject
 {
-    partial class _10202_Watermark
+    partial class _10202_Draw
     {
         /// <summary>
         /// Required designer variable.
@@ -44,7 +44,7 @@
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
-            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.TabIndex = 2;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripLabel1
@@ -64,14 +64,14 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
-            // _10202_Watermark
+            // _10202_Draw
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "_10202_Watermark";
-            this.Text = "C#課程專案 | 圖片浮水印";
+            this.Name = "_10202_Draw";
+            this.Text = "_10202_Draw";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

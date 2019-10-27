@@ -20,6 +20,7 @@ namespace ClassWinFormProject
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("PortfolioMainForm.exe");
+            this.Visible = false;
         }
 
         private void buttonLotto_Click(object sender, EventArgs e)
@@ -101,7 +102,7 @@ namespace ClassWinFormProject
 
         private void buttonProgress_Click(object sender, EventArgs e)
         {
-            _10202_Progress progress = new _10202_Progress();
+            _10202_Progress2 progress = new _10202_Progress2();
             this.Visible = false;
             progress.Show();
         }
@@ -111,6 +112,34 @@ namespace ClassWinFormProject
             _10202_Converter converter = new _10202_Converter();
             this.Visible = false;
             converter.Show();
+        }
+
+        private void buttonPOS_Click(object sender, EventArgs e)
+        {
+            _10202_POS pos = new _10202_POS();
+            this.Visible = false;
+            pos.Show();
+        }
+
+        private void buttonNotepad_Click(object sender, EventArgs e)
+        {
+            _10202_Notepad notepad = new _10202_Notepad();
+            this.Visible = false;
+            notepad.Show();
+        }
+
+        private void buttonDraw_Click(object sender, EventArgs e)
+        {
+            _10202_Draw draw = new _10202_Draw();
+            this.Visible = false;
+            draw.Show();
+        }
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            ClassMainForm main = new ClassMainForm();
+            this.Visible = false;
+            main.Show();
         }
     }
 }

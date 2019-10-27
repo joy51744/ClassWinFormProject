@@ -22,7 +22,6 @@ namespace ClassWinFormProject
         private int ProgressMaximum = 100;
         private int ProgressValue = 0;
 
-
         private void BtnGo_Click(object sender, EventArgs e)
         {
             ProgressValue = 0;
@@ -68,6 +67,13 @@ namespace ClassWinFormProject
                     this.Font, Brushes.Black,
                     picProgress.ClientRectangle, sf);
             }
+        }
+
+        private void 進度條1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _10202_Progress2 progress = new _10202_Progress2();
+            this.Visible = false;
+            progress.Show();
         }
     }
 }

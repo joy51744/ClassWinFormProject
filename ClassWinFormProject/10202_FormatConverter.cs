@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace ClassWinFormProject
 {
-    public partial class _10202_Watermark : Form
+    public partial class _10202_FormatConverter : Form
     {
-        public _10202_Watermark()
+        public _10202_FormatConverter()
         {
             InitializeComponent();
-        }
-
-        private void toolStripLabel1_Click(object sender, EventArgs e)
-        {
-            ClassMainForm1 main = new ClassMainForm1();
-            this.Visible = false;
-            main.Show();
         }
     }
 }

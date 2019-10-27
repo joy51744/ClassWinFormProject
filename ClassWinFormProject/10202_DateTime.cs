@@ -28,5 +28,12 @@ namespace ClassWinFormProject
         {
             labelShow.Text = DateTime.Now.ToString();
         }
+
+        private void toolStripLabel1_Click(object sender, EventArgs e)
+        {
+            ClassMainForm1 main = new ClassMainForm1();
+            this.Visible = false;
+            main.Show();
+        }
     }
 }
