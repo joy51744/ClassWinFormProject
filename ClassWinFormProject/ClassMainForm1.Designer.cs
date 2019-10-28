@@ -46,13 +46,13 @@
             this.buttonString = new System.Windows.Forms.Button();
             this.buttonLotto = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.buttonProgress = new System.Windows.Forms.Button();
             this.buttonOpen = new System.Windows.Forms.Button();
             this.buttonName = new System.Windows.Forms.Button();
             this.buttonBrowser = new System.Windows.Forms.Button();
+            this.buttonPOS = new System.Windows.Forms.Button();
+            this.buttonClock = new System.Windows.Forms.Button();
             this.buttonDraw = new System.Windows.Forms.Button();
             this.buttonNotepad = new System.Windows.Forms.Button();
-            this.buttonPOS = new System.Windows.Forms.Button();
             this.buttonConverter = new System.Windows.Forms.Button();
             this.buttonWatermark = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
@@ -125,7 +125,7 @@
             // buttonFornColor
             // 
             this.buttonFornColor.Font = new System.Drawing.Font("標楷體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonFornColor.Location = new System.Drawing.Point(437, 97);
+            this.buttonFornColor.Location = new System.Drawing.Point(437, 96);
             this.buttonFornColor.Name = "buttonFornColor";
             this.buttonFornColor.Size = new System.Drawing.Size(130, 45);
             this.buttonFornColor.TabIndex = 105;
@@ -136,7 +136,7 @@
             // buttonSlideShow
             // 
             this.buttonSlideShow.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonSlideShow.Location = new System.Drawing.Point(231, 288);
+            this.buttonSlideShow.Location = new System.Drawing.Point(231, 290);
             this.buttonSlideShow.Name = "buttonSlideShow";
             this.buttonSlideShow.Size = new System.Drawing.Size(130, 45);
             this.buttonSlideShow.TabIndex = 103;
@@ -147,7 +147,7 @@
             // buttonSort
             // 
             this.buttonSort.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonSort.Location = new System.Drawing.Point(231, 193);
+            this.buttonSort.Location = new System.Drawing.Point(231, 194);
             this.buttonSort.Name = "buttonSort";
             this.buttonSort.Size = new System.Drawing.Size(130, 45);
             this.buttonSort.TabIndex = 102;
@@ -162,7 +162,7 @@
             this.buttonString1.Name = "buttonString1";
             this.buttonString1.Size = new System.Drawing.Size(130, 45);
             this.buttonString1.TabIndex = 100;
-            this.buttonString1.Text = "字串";
+            this.buttonString1.Text = "字串處理";
             this.buttonString1.UseVisualStyleBackColor = true;
             this.buttonString1.Click += new System.EventHandler(this.buttonString1_Click);
             // 
@@ -209,21 +209,10 @@
             this.label1.TabIndex = 96;
             this.label1.Text = "C# Class Project";
             // 
-            // buttonProgress
-            // 
-            this.buttonProgress.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonProgress.Location = new System.Drawing.Point(437, 383);
-            this.buttonProgress.Name = "buttonProgress";
-            this.buttonProgress.Size = new System.Drawing.Size(130, 45);
-            this.buttonProgress.TabIndex = 108;
-            this.buttonProgress.Text = "進度條";
-            this.buttonProgress.UseVisualStyleBackColor = true;
-            this.buttonProgress.Click += new System.EventHandler(this.buttonProgress_Click);
-            // 
             // buttonOpen
             // 
             this.buttonOpen.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonOpen.Location = new System.Drawing.Point(437, 288);
+            this.buttonOpen.Location = new System.Drawing.Point(437, 290);
             this.buttonOpen.Name = "buttonOpen";
             this.buttonOpen.Size = new System.Drawing.Size(130, 45);
             this.buttonOpen.TabIndex = 107;
@@ -245,7 +234,7 @@
             // buttonBrowser
             // 
             this.buttonBrowser.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonBrowser.Location = new System.Drawing.Point(437, 193);
+            this.buttonBrowser.Location = new System.Drawing.Point(437, 194);
             this.buttonBrowser.Name = "buttonBrowser";
             this.buttonBrowser.Size = new System.Drawing.Size(130, 45);
             this.buttonBrowser.TabIndex = 106;
@@ -253,14 +242,36 @@
             this.buttonBrowser.UseVisualStyleBackColor = true;
             this.buttonBrowser.Click += new System.EventHandler(this.buttonBrowser_Click);
             // 
+            // buttonPOS
+            // 
+            this.buttonPOS.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonPOS.Location = new System.Drawing.Point(641, 96);
+            this.buttonPOS.Name = "buttonPOS";
+            this.buttonPOS.Size = new System.Drawing.Size(130, 45);
+            this.buttonPOS.TabIndex = 109;
+            this.buttonPOS.Text = "POS系統";
+            this.buttonPOS.UseVisualStyleBackColor = true;
+            this.buttonPOS.Click += new System.EventHandler(this.buttonPOS_Click);
+            // 
+            // buttonClock
+            // 
+            this.buttonClock.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonClock.Location = new System.Drawing.Point(437, 383);
+            this.buttonClock.Name = "buttonRWD";
+            this.buttonClock.Size = new System.Drawing.Size(130, 45);
+            this.buttonClock.TabIndex = 108;
+            this.buttonClock.Text = "響應式視窗";
+            this.buttonClock.UseVisualStyleBackColor = true;
+            this.buttonClock.Click += new System.EventHandler(this.buttonRWD_Click);
+            // 
             // buttonDraw
             // 
             this.buttonDraw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDraw.BackgroundImage")));
             this.buttonDraw.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonDraw.Location = new System.Drawing.Point(645, 383);
+            this.buttonDraw.Location = new System.Drawing.Point(641, 290);
             this.buttonDraw.Name = "buttonDraw";
             this.buttonDraw.Size = new System.Drawing.Size(130, 45);
-            this.buttonDraw.TabIndex = 112;
+            this.buttonDraw.TabIndex = 111;
             this.buttonDraw.Text = "小畫板";
             this.buttonDraw.UseVisualStyleBackColor = true;
             this.buttonDraw.Click += new System.EventHandler(this.buttonDraw_Click);
@@ -269,33 +280,22 @@
             // 
             this.buttonNotepad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNotepad.BackgroundImage")));
             this.buttonNotepad.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonNotepad.Location = new System.Drawing.Point(645, 288);
+            this.buttonNotepad.Location = new System.Drawing.Point(641, 193);
             this.buttonNotepad.Name = "buttonNotepad";
             this.buttonNotepad.Size = new System.Drawing.Size(130, 45);
-            this.buttonNotepad.TabIndex = 111;
+            this.buttonNotepad.TabIndex = 110;
             this.buttonNotepad.Text = "記事本";
             this.buttonNotepad.UseVisualStyleBackColor = true;
             this.buttonNotepad.Click += new System.EventHandler(this.buttonNotepad_Click);
-            // 
-            // buttonPOS
-            // 
-            this.buttonPOS.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonPOS.Location = new System.Drawing.Point(645, 193);
-            this.buttonPOS.Name = "buttonPOS";
-            this.buttonPOS.Size = new System.Drawing.Size(130, 45);
-            this.buttonPOS.TabIndex = 110;
-            this.buttonPOS.Text = "POS系統";
-            this.buttonPOS.UseVisualStyleBackColor = true;
-            this.buttonPOS.Click += new System.EventHandler(this.buttonPOS_Click);
             // 
             // buttonConverter
             // 
             this.buttonConverter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonConverter.BackgroundImage")));
             this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonConverter.Location = new System.Drawing.Point(643, 97);
+            this.buttonConverter.Location = new System.Drawing.Point(641, 385);
             this.buttonConverter.Name = "buttonConverter";
             this.buttonConverter.Size = new System.Drawing.Size(130, 45);
-            this.buttonConverter.TabIndex = 109;
+            this.buttonConverter.TabIndex = 112;
             this.buttonConverter.Text = "轉換器";
             this.buttonConverter.UseVisualStyleBackColor = true;
             this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
@@ -317,11 +317,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonClock);
             this.Controls.Add(this.buttonDraw);
             this.Controls.Add(this.buttonNotepad);
             this.Controls.Add(this.buttonPOS);
             this.Controls.Add(this.buttonConverter);
-            this.Controls.Add(this.buttonProgress);
             this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.buttonBrowser);
             this.Controls.Add(this.buttonFornColor);
@@ -354,7 +354,6 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel2;
         private System.Windows.Forms.Button buttonPOS;
         private System.Windows.Forms.Button buttonConverter;
-        private System.Windows.Forms.Button buttonProgress;
         private System.Windows.Forms.Button buttonOpen;
         private System.Windows.Forms.Button buttonBrowser;
         private System.Windows.Forms.Button buttonFornColor;
@@ -372,5 +371,6 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.Button buttonClock;
     }
 }

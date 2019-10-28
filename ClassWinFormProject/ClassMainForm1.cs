@@ -100,11 +100,9 @@ namespace ClassWinFormProject
             open.Show();
         }
 
-        private void buttonProgress_Click(object sender, EventArgs e)
+        private void buttonRWD_Click(object sender, EventArgs e)
         {
-            _10202_Progress2 progress = new _10202_Progress2();
-            this.Visible = false;
-            progress.Show();
+            System.Diagnostics.Process.Start("RWD.exe");
         }
 
         private void buttonConverter_Click(object sender, EventArgs e)
