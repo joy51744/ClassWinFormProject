@@ -131,10 +131,8 @@ namespace ClassWinFormProject
 
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
-            MainForm main = new MainForm();
+            System.Diagnostics.Process.Start("PortfolioMainForm.exe");
             this.Visible = false;
-            main.Show();
-            //System.Diagnostics.Process.Start("PortfolioMainForm.exe");
         }
 
         private void toolStripMenuItem3_Click(object sender, EventArgs e)
