@@ -220,23 +220,11 @@
     <Compile Include="10202_DateTime.Designer.cs">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
     </Compile>
-    <Compile Include="10202_DateTimeConvert.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="10202_DateTimeConvert.Designer.cs">
-      <DependentUpon>10202_DateTimeConvert.cs</DependentUpon>
-    </Compile>
     <Compile Include="10202_Draw.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="10202_Draw.Designer.cs">
       <DependentUpon>10202_Draw.cs</DependentUpon>
-    </Compile>
-    <Compile Include="10202_FormatConverter.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="10202_FormatConverter.Designer.cs">
-      <DependentUpon>10202_FormatConverter.cs</DependentUpon>
     </Compile>
     <Compile Include="10202_FormColor.cs">
       <SubType>Form</SubType>
@@ -244,11 +232,11 @@
     <Compile Include="10202_FormColor.Designer.cs">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </Compile>
-    <Compile Include="10202_LanguageConvert.cs">
+    <Compile Include="10202_ImageView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="10202_LanguageConvert.Designer.cs">
-      <DependentUpon>10202_LanguageConvert.cs</DependentUpon>
+    <Compile Include="10202_ImageView.Designer.cs">
+      <DependentUpon>10202_ImageView.cs</DependentUpon>
     </Compile>
     <Compile Include="10202_Name.cs">
       <SubType>Form</SubType>
@@ -285,12 +273,6 @@
     </Compile>
     <Compile Include="10202_UnitConverter.Designer.cs">
       <DependentUpon>10202_UnitConverter.cs</DependentUpon>
-    </Compile>
-    <Compile Include="10202_Watermark.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="10202_Watermark.Designer.cs">
-      <DependentUpon>10202_Watermark.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassMainForm1.cs">
       <SubType>Form</SubType>
@@ -402,20 +384,14 @@
     <EmbeddedResource Include="10202_DateTime.resx">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="10202_DateTimeConvert.resx">
-      <DependentUpon>10202_DateTimeConvert.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="10202_Draw.resx">
       <DependentUpon>10202_Draw.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="10202_FormatConverter.resx">
-      <DependentUpon>10202_FormatConverter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10202_FormColor.resx">
       <DependentUpon>10202_FormColor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="10202_LanguageConvert.resx">
-      <DependentUpon>10202_LanguageConvert.cs</DependentUpon>
+    <EmbeddedResource Include="10202_ImageView.resx">
+      <DependentUpon>10202_ImageView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10202_Name.resx">
       <DependentUpon>10202_Name.cs</DependentUpon>
@@ -434,9 +410,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="10202_UnitConverter.resx">
       <DependentUpon>10202_UnitConverter.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="10202_Watermark.resx">
-      <DependentUpon>10202_Watermark.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassMainForm1.resx">
       <DependentUpon>ClassMainForm1.cs</DependentUpon>

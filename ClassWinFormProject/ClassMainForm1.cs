@@ -72,9 +72,9 @@ namespace ClassWinFormProject
             slideShow.Show();
         }
 
-        private void buttonWatermark_Click(object sender, EventArgs e)
+        private void buttonImageView_Click(object sender, EventArgs e)
         {
-            _10202_Watermark watermark = new _10202_Watermark();
+            _10202_ImageView watermark = new _10202_ImageView();
             this.Visible = false;
             watermark.Show();
         }

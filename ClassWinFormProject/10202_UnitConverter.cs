@@ -3557,5 +3557,12 @@ namespace ClassWinFormProject
                 }
             }
         }
+
+        private void 進制轉換ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            _10202_Converter unitConverter = new _10202_Converter();
+            this.Visible = false;
+            unitConverter.Show();
+        }
     }
 }

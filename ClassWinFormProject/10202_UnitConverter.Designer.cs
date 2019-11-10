@@ -32,7 +32,6 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.進制轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.單位轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.格式轉換ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel3 = new System.Windows.Forms.ToolStripLabel();
@@ -111,8 +110,7 @@
             // 
             this.toolStripLabel1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.進制轉換ToolStripMenuItem,
-            this.單位轉換ToolStripMenuItem,
-            this.格式轉換ToolStripMenuItem});
+            this.單位轉換ToolStripMenuItem});
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
             this.toolStripLabel1.Text = "專案";
@@ -120,20 +118,15 @@
             // 進制轉換ToolStripMenuItem
             // 
             this.進制轉換ToolStripMenuItem.Name = "進制轉換ToolStripMenuItem";
-            this.進制轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.進制轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.進制轉換ToolStripMenuItem.Text = "進制轉換";
+            this.進制轉換ToolStripMenuItem.Click += new System.EventHandler(this.進制轉換ToolStripMenuItem_Click);
             // 
             // 單位轉換ToolStripMenuItem
             // 
             this.單位轉換ToolStripMenuItem.Name = "單位轉換ToolStripMenuItem";
-            this.單位轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.單位轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.單位轉換ToolStripMenuItem.Text = "單位轉換";
-            // 
-            // 格式轉換ToolStripMenuItem
-            // 
-            this.格式轉換ToolStripMenuItem.Name = "格式轉換ToolStripMenuItem";
-            this.格式轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.格式轉換ToolStripMenuItem.Text = "格式轉換";
             // 
             // toolStripSeparator1
             // 
@@ -835,7 +828,6 @@
         private System.Windows.Forms.ToolStripDropDownButton toolStripLabel1;
         private System.Windows.Forms.ToolStripMenuItem 進制轉換ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 單位轉換ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 格式轉換ToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Label label1;

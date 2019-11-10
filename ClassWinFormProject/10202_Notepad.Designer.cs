@@ -71,7 +71,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
             this.Name = "_10202_Notepad";
-            this.Text = "_10202_Notepad";
+            this.Text = "C#課程專案 | 記事本";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

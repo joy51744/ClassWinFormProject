@@ -71,7 +71,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.toolStrip1);
             this.Name = "_10202_Draw";
-            this.Text = "_10202_Draw";
+            this.Text = "C#課程專案 | 小畫板";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

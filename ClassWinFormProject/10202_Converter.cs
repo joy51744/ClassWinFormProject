@@ -31,25 +31,77 @@ namespace ClassWinFormProject
             unitConverter.Show();
         }
 
-        private void 格式轉換ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void buttonCharTo16_Click(object sender, EventArgs e)
         {
-            _10202_FormatConverter format = new _10202_FormatConverter();
-            this.Visible = false;
-            format.Show();
+            try
+            {
+                string[] array10 = textBox1.Text.Trim().Split(' ');
+                int[] charArr = ConvertCharTo10(array10);
+                string[] array16 = Convert10To16(charArr);
+                for (int i = 0; i < array16.Length; i++)
+                {
+                    textBox2.Text += array16[i] + " ";
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("請輸入正確數值");
+            }
         }
 
-        private void 日期轉換ToolStripMenuItem_Click(object sender, EventArgs e)
+        private string[] Convert10To16(int[] strArr)
         {
-            _10202_DateTimeConvert dateTime = new _10202_DateTimeConvert();
-            this.Visible = false;
-            dateTime.Show();
+            string[] array16 = null;
+            try
+            {
+                if (strArr != null && strArr.Length > 0)
+                {
+                    array16 = new string[strArr.Length];
+                    for (int i = 0; i < strArr.Length; i++)
+                    {
+                        array16[i] = Convert.ToString(strArr[i], 16);
+                    }
+                }
+                return array16;
+            }
+            catch (Exception ex)
+            {
+                return array16;
+            }
         }
 
-        private void 語言轉換ToolStripMenuItem_Click(object sender, EventArgs e)
+        private int[] ConvertCharTo10(string[] strArr)
         {
-            _10202_LanguageConvert language = new _10202_LanguageConvert();
-            this.Visible = false;
-            language.Show();
+            int[] charArr = null;
+            try
+            {
+                string str = null;
+                if (strArr != null && strArr.Length > 0)
+                {
+                    for (int i = 0; i < strArr.Length; i++)
+                    {
+                        if (strArr[i].Trim() != null)
+                        {
+                            str += strArr[i];
+                        }
+                    }
+                    charArr = new int[str.Length];
+                    for (int i = 0; i < str.Length; i++)
+                    {
+                        charArr[i] = Convert.ToInt32(str[i]);
+                    }
+                }
+                return charArr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return charArr;
+            }
+        }
+
+        private void button16ToChar_Click(object sender, EventArgs e)
+        {
         }
     }
 }

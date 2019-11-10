@@ -54,7 +54,7 @@
             this.buttonDraw = new System.Windows.Forms.Button();
             this.buttonNotepad = new System.Windows.Forms.Button();
             this.buttonConverter = new System.Windows.Forms.Button();
-            this.buttonWatermark = new System.Windows.Forms.Button();
+            this.buttonImageView = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -257,7 +257,7 @@
             // 
             this.buttonClock.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonClock.Location = new System.Drawing.Point(437, 383);
-            this.buttonClock.Name = "buttonRWD";
+            this.buttonClock.Name = "buttonClock";
             this.buttonClock.Size = new System.Drawing.Size(130, 45);
             this.buttonClock.TabIndex = 108;
             this.buttonClock.Text = "響應式視窗";
@@ -300,17 +300,16 @@
             this.buttonConverter.UseVisualStyleBackColor = true;
             this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
             // 
-            // buttonWatermark
+            // buttonImageView
             // 
-            this.buttonWatermark.BackgroundImage = global::ClassWinFormProject.Properties.Resources._01;
-            this.buttonWatermark.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonWatermark.Location = new System.Drawing.Point(231, 383);
-            this.buttonWatermark.Name = "buttonWatermark";
-            this.buttonWatermark.Size = new System.Drawing.Size(130, 45);
-            this.buttonWatermark.TabIndex = 104;
-            this.buttonWatermark.Text = "圖片浮水印";
-            this.buttonWatermark.UseVisualStyleBackColor = true;
-            this.buttonWatermark.Click += new System.EventHandler(this.buttonWatermark_Click);
+            this.buttonImageView.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.buttonImageView.Location = new System.Drawing.Point(231, 383);
+            this.buttonImageView.Name = "buttonImageView";
+            this.buttonImageView.Size = new System.Drawing.Size(130, 45);
+            this.buttonImageView.TabIndex = 104;
+            this.buttonImageView.Text = "圖片瀏覽器";
+            this.buttonImageView.UseVisualStyleBackColor = true;
+            this.buttonImageView.Click += new System.EventHandler(this.buttonImageView_Click);
             // 
             // ClassMainForm1
             // 
@@ -325,7 +324,7 @@
             this.Controls.Add(this.buttonOpen);
             this.Controls.Add(this.buttonBrowser);
             this.Controls.Add(this.buttonFornColor);
-            this.Controls.Add(this.buttonWatermark);
+            this.Controls.Add(this.buttonImageView);
             this.Controls.Add(this.buttonSlideShow);
             this.Controls.Add(this.buttonSort);
             this.Controls.Add(this.buttonString1);
@@ -357,7 +356,7 @@
         private System.Windows.Forms.Button buttonOpen;
         private System.Windows.Forms.Button buttonBrowser;
         private System.Windows.Forms.Button buttonFornColor;
-        private System.Windows.Forms.Button buttonWatermark;
+        private System.Windows.Forms.Button buttonImageView;
         private System.Windows.Forms.Button buttonSlideShow;
         private System.Windows.Forms.Button buttonSort;
         private System.Windows.Forms.Button buttonString1;
