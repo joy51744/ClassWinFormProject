@@ -32,7 +32,7 @@ namespace ClassWinFormProject
         }
 
         private void buttonCharTo16_Click(object sender, EventArgs e)
-        {
+        {//http://blog.sina.com.cn/s/blog_79a08b290101gfwe.html
             try
             {
                 string[] array10 = textBox1.Text.Trim().Split(' ');
