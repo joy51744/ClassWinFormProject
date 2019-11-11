@@ -31,77 +31,88 @@ namespace ClassWinFormProject
             unitConverter.Show();
         }
 
-        private void buttonCharTo16_Click(object sender, EventArgs e)
-        {//http://blog.sina.com.cn/s/blog_79a08b290101gfwe.html
-            try
-            {
-                string[] array10 = textBox1.Text.Trim().Split(' ');
-                int[] charArr = ConvertCharTo10(array10);
-                string[] array16 = Convert10To16(charArr);
-                for (int i = 0; i < array16.Length; i++)
-                {
-                    textBox2.Text += array16[i] + " ";
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("請輸入正確數值");
-            }
+        private void button16To10_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 16);
+            textBox2.Text = Convert.ToString(myNum, 10);
         }
 
-        private string[] Convert10To16(int[] strArr)
+        private void button2To10_Click(object sender, EventArgs e)
         {
-            string[] array16 = null;
-            try
-            {
-                if (strArr != null && strArr.Length > 0)
-                {
-                    array16 = new string[strArr.Length];
-                    for (int i = 0; i < strArr.Length; i++)
-                    {
-                        array16[i] = Convert.ToString(strArr[i], 16);
-                    }
-                }
-                return array16;
-            }
-            catch (Exception ex)
-            {
-                return array16;
-            }
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 2);
+            textBox2.Text = myNum.ToString();
         }
 
-        private int[] ConvertCharTo10(string[] strArr)
+        private void button2To8_Click(object sender, EventArgs e)
         {
-            int[] charArr = null;
-            try
-            {
-                string str = null;
-                if (strArr != null && strArr.Length > 0)
-                {
-                    for (int i = 0; i < strArr.Length; i++)
-                    {
-                        if (strArr[i].Trim() != null)
-                        {
-                            str += strArr[i];
-                        }
-                    }
-                    charArr = new int[str.Length];
-                    for (int i = 0; i < str.Length; i++)
-                    {
-                        charArr[i] = Convert.ToInt32(str[i]);
-                    }
-                }
-                return charArr;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return charArr;
-            }
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 2);
+            textBox2.Text = Convert.ToString(myNum, 8);
         }
 
-        private void button16ToChar_Click(object sender, EventArgs e)
+        private void button2To16_Click(object sender, EventArgs e)
         {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 2);
+            textBox2.Text = Convert.ToString(myNum, 16);
+        }
+
+        private void button8To2_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 8);
+            textBox2.Text = Convert.ToString(myNum, 2);
+        }
+
+        private void button8To10_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 8);
+            textBox2.Text = Convert.ToString(myNum, 10);
+        }
+
+        private void button8To16_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 8);
+            textBox2.Text = Convert.ToString(myNum, 16);
+        }
+
+        private void button10To2_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 10);
+            textBox2.Text = Convert.ToString(myNum, 2);
+        }
+
+        private void button10To8_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 10);
+            textBox2.Text = Convert.ToString(myNum, 8);
+        }
+
+        private void button10To16_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 10);
+            textBox2.Text = Convert.ToString(myNum, 16);
+        }
+
+        private void button16To2_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 16);
+            textBox2.Text = Convert.ToString(myNum, 2);
+        }
+
+        private void button16To8_Click(object sender, EventArgs e)
+        {
+            string myBrinary = textBox1.Text;
+            int myNum = Convert.ToInt32(myBrinary, 16);
+            textBox2.Text = Convert.ToString(myNum, 8);
         }
     }
 }

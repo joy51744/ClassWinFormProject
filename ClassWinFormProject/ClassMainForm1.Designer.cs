@@ -290,7 +290,6 @@
             // 
             // buttonConverter
             // 
-            this.buttonConverter.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonConverter.BackgroundImage")));
             this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonConverter.Location = new System.Drawing.Point(641, 385);
             this.buttonConverter.Name = "buttonConverter";

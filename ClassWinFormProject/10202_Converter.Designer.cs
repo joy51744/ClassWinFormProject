@@ -43,11 +43,25 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button10To16 = new System.Windows.Forms.Button();
             this.button16To10 = new System.Windows.Forms.Button();
-            this.button16ToChar = new System.Windows.Forms.Button();
-            this.buttonCharTo16 = new System.Windows.Forms.Button();
-            this.button10ToChar = new System.Windows.Forms.Button();
-            this.buttonCharTo10 = new System.Windows.Forms.Button();
+            this.button2To10 = new System.Windows.Forms.Button();
+            this.button8To10 = new System.Windows.Forms.Button();
+            this.button2To8 = new System.Windows.Forms.Button();
+            this.button2To16 = new System.Windows.Forms.Button();
+            this.button8To2 = new System.Windows.Forms.Button();
+            this.button8To16 = new System.Windows.Forms.Button();
+            this.button10To2 = new System.Windows.Forms.Button();
+            this.button10To8 = new System.Windows.Forms.Button();
+            this.button16To2 = new System.Windows.Forms.Button();
+            this.button16To8 = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.toolStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -77,13 +91,13 @@
             // 進制轉換ToolStripMenuItem
             // 
             this.進制轉換ToolStripMenuItem.Name = "進制轉換ToolStripMenuItem";
-            this.進制轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.進制轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.進制轉換ToolStripMenuItem.Text = "進制轉換";
             // 
             // 單位轉換ToolStripMenuItem
             // 
             this.單位轉換ToolStripMenuItem.Name = "單位轉換ToolStripMenuItem";
-            this.單位轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.單位轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
             this.單位轉換ToolStripMenuItem.Text = "單位轉換";
             this.單位轉換ToolStripMenuItem.Click += new System.EventHandler(this.單位轉換ToolStripMenuItem_Click);
             // 
@@ -135,84 +149,194 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(29, 12);
             this.label1.TabIndex = 7;
-            this.label1.Text = "轉換";
+            this.label1.Text = "輸出";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 72);
+            this.label2.Location = new System.Drawing.Point(36, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 8;
-            this.label2.Text = "未轉換";
+            this.label2.Text = "輸入";
             // 
             // button10To16
             // 
-            this.button10To16.Location = new System.Drawing.Point(295, 62);
+            this.button10To16.Location = new System.Drawing.Point(10, 79);
             this.button10To16.Name = "button10To16";
             this.button10To16.Size = new System.Drawing.Size(75, 23);
             this.button10To16.TabIndex = 10;
             this.button10To16.Text = "10 → 16";
             this.button10To16.UseVisualStyleBackColor = true;
+            this.button10To16.Click += new System.EventHandler(this.button10To16_Click);
             // 
             // button16To10
             // 
-            this.button16To10.Location = new System.Drawing.Point(295, 106);
+            this.button16To10.Location = new System.Drawing.Point(10, 81);
             this.button16To10.Name = "button16To10";
             this.button16To10.Size = new System.Drawing.Size(75, 23);
             this.button16To10.TabIndex = 11;
             this.button16To10.Text = "16 → 10";
             this.button16To10.UseVisualStyleBackColor = true;
+            this.button16To10.Click += new System.EventHandler(this.button16To10_Click);
             // 
-            // button16ToChar
+            // button2To10
             // 
-            this.button16ToChar.Location = new System.Drawing.Point(295, 150);
-            this.button16ToChar.Name = "button16ToChar";
-            this.button16ToChar.Size = new System.Drawing.Size(75, 23);
-            this.button16ToChar.TabIndex = 12;
-            this.button16ToChar.Text = "16 → Char";
-            this.button16ToChar.UseVisualStyleBackColor = true;
-            this.button16ToChar.Click += new System.EventHandler(this.button16ToChar_Click);
+            this.button2To10.Location = new System.Drawing.Point(10, 49);
+            this.button2To10.Name = "button2To10";
+            this.button2To10.Size = new System.Drawing.Size(75, 23);
+            this.button2To10.TabIndex = 16;
+            this.button2To10.Text = "2 → 10";
+            this.button2To10.UseVisualStyleBackColor = true;
+            this.button2To10.Click += new System.EventHandler(this.button2To10_Click);
             // 
-            // buttonCharTo16
+            // button8To10
             // 
-            this.buttonCharTo16.Location = new System.Drawing.Point(295, 194);
-            this.buttonCharTo16.Name = "buttonCharTo16";
-            this.buttonCharTo16.Size = new System.Drawing.Size(75, 23);
-            this.buttonCharTo16.TabIndex = 13;
-            this.buttonCharTo16.Text = "Char → 16";
-            this.buttonCharTo16.UseVisualStyleBackColor = true;
-            this.buttonCharTo16.Click += new System.EventHandler(this.buttonCharTo16_Click);
+            this.button8To10.Location = new System.Drawing.Point(10, 48);
+            this.button8To10.Name = "button8To10";
+            this.button8To10.Size = new System.Drawing.Size(75, 23);
+            this.button8To10.TabIndex = 17;
+            this.button8To10.Text = "8 → 10";
+            this.button8To10.UseVisualStyleBackColor = true;
+            this.button8To10.Click += new System.EventHandler(this.button8To10_Click);
             // 
-            // button10ToChar
+            // button2To8
             // 
-            this.button10ToChar.Location = new System.Drawing.Point(389, 60);
-            this.button10ToChar.Name = "button10ToChar";
-            this.button10ToChar.Size = new System.Drawing.Size(75, 23);
-            this.button10ToChar.TabIndex = 14;
-            this.button10ToChar.Text = "10 → Char";
-            this.button10ToChar.UseVisualStyleBackColor = true;
+            this.button2To8.Location = new System.Drawing.Point(10, 20);
+            this.button2To8.Name = "button2To8";
+            this.button2To8.Size = new System.Drawing.Size(75, 23);
+            this.button2To8.TabIndex = 18;
+            this.button2To8.Text = "2 → 8";
+            this.button2To8.UseVisualStyleBackColor = true;
+            this.button2To8.Click += new System.EventHandler(this.button2To8_Click);
             // 
-            // buttonCharTo10
+            // button2To16
             // 
-            this.buttonCharTo10.Location = new System.Drawing.Point(389, 106);
-            this.buttonCharTo10.Name = "buttonCharTo10";
-            this.buttonCharTo10.Size = new System.Drawing.Size(75, 23);
-            this.buttonCharTo10.TabIndex = 15;
-            this.buttonCharTo10.Text = "Char → 10";
-            this.buttonCharTo10.UseVisualStyleBackColor = true;
+            this.button2To16.Location = new System.Drawing.Point(10, 78);
+            this.button2To16.Name = "button2To16";
+            this.button2To16.Size = new System.Drawing.Size(75, 23);
+            this.button2To16.TabIndex = 19;
+            this.button2To16.Text = "2 → 16";
+            this.button2To16.UseVisualStyleBackColor = true;
+            this.button2To16.Click += new System.EventHandler(this.button2To16_Click);
+            // 
+            // button8To2
+            // 
+            this.button8To2.Location = new System.Drawing.Point(10, 19);
+            this.button8To2.Name = "button8To2";
+            this.button8To2.Size = new System.Drawing.Size(75, 23);
+            this.button8To2.TabIndex = 20;
+            this.button8To2.Text = "8 → 2";
+            this.button8To2.UseVisualStyleBackColor = true;
+            this.button8To2.Click += new System.EventHandler(this.button8To2_Click);
+            // 
+            // button8To16
+            // 
+            this.button8To16.Location = new System.Drawing.Point(10, 77);
+            this.button8To16.Name = "button8To16";
+            this.button8To16.Size = new System.Drawing.Size(75, 23);
+            this.button8To16.TabIndex = 21;
+            this.button8To16.Text = "8 → 16";
+            this.button8To16.UseVisualStyleBackColor = true;
+            this.button8To16.Click += new System.EventHandler(this.button8To16_Click);
+            // 
+            // button10To2
+            // 
+            this.button10To2.Location = new System.Drawing.Point(10, 21);
+            this.button10To2.Name = "button10To2";
+            this.button10To2.Size = new System.Drawing.Size(75, 23);
+            this.button10To2.TabIndex = 22;
+            this.button10To2.Text = "10 → 2";
+            this.button10To2.UseVisualStyleBackColor = true;
+            this.button10To2.Click += new System.EventHandler(this.button10To2_Click);
+            // 
+            // button10To8
+            // 
+            this.button10To8.Location = new System.Drawing.Point(10, 50);
+            this.button10To8.Name = "button10To8";
+            this.button10To8.Size = new System.Drawing.Size(75, 23);
+            this.button10To8.TabIndex = 23;
+            this.button10To8.Text = "10 → 8";
+            this.button10To8.UseVisualStyleBackColor = true;
+            this.button10To8.Click += new System.EventHandler(this.button10To8_Click);
+            // 
+            // button16To2
+            // 
+            this.button16To2.Location = new System.Drawing.Point(10, 21);
+            this.button16To2.Name = "button16To2";
+            this.button16To2.Size = new System.Drawing.Size(75, 23);
+            this.button16To2.TabIndex = 25;
+            this.button16To2.Text = "16 → 2";
+            this.button16To2.UseVisualStyleBackColor = true;
+            this.button16To2.Click += new System.EventHandler(this.button16To2_Click);
+            // 
+            // button16To8
+            // 
+            this.button16To8.Location = new System.Drawing.Point(10, 52);
+            this.button16To8.Name = "button16To8";
+            this.button16To8.Size = new System.Drawing.Size(75, 23);
+            this.button16To8.TabIndex = 26;
+            this.button16To8.Text = "16 → 8";
+            this.button16To8.UseVisualStyleBackColor = true;
+            this.button16To8.Click += new System.EventHandler(this.button16To8_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button2To8);
+            this.groupBox1.Controls.Add(this.button2To10);
+            this.groupBox1.Controls.Add(this.button2To16);
+            this.groupBox1.Location = new System.Drawing.Point(272, 29);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(91, 113);
+            this.groupBox1.TabIndex = 27;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "2進制轉換";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button8To2);
+            this.groupBox2.Controls.Add(this.button8To10);
+            this.groupBox2.Controls.Add(this.button8To16);
+            this.groupBox2.Location = new System.Drawing.Point(272, 156);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(91, 113);
+            this.groupBox2.TabIndex = 28;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "8進制轉換";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button10To2);
+            this.groupBox3.Controls.Add(this.button10To8);
+            this.groupBox3.Controls.Add(this.button10To16);
+            this.groupBox3.Location = new System.Drawing.Point(380, 29);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(91, 113);
+            this.groupBox3.TabIndex = 29;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "10進制轉換";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.button16To2);
+            this.groupBox4.Controls.Add(this.button16To8);
+            this.groupBox4.Controls.Add(this.button16To10);
+            this.groupBox4.Location = new System.Drawing.Point(380, 156);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(91, 113);
+            this.groupBox4.TabIndex = 29;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "16進制轉換";
             // 
             // _10202_Converter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(484, 261);
-            this.Controls.Add(this.buttonCharTo10);
-            this.Controls.Add(this.button10ToChar);
-            this.Controls.Add(this.buttonCharTo16);
-            this.Controls.Add(this.button16ToChar);
-            this.Controls.Add(this.button16To10);
-            this.Controls.Add(this.button10To16);
+            this.ClientSize = new System.Drawing.Size(484, 281);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
@@ -222,6 +346,10 @@
             this.Text = "C#課程專案 | 進制轉換器";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,9 +372,19 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button10To16;
         private System.Windows.Forms.Button button16To10;
-        private System.Windows.Forms.Button button16ToChar;
-        private System.Windows.Forms.Button buttonCharTo16;
-        private System.Windows.Forms.Button button10ToChar;
-        private System.Windows.Forms.Button buttonCharTo10;
+        private System.Windows.Forms.Button button2To10;
+        private System.Windows.Forms.Button button8To10;
+        private System.Windows.Forms.Button button2To8;
+        private System.Windows.Forms.Button button2To16;
+        private System.Windows.Forms.Button button8To2;
+        private System.Windows.Forms.Button button8To16;
+        private System.Windows.Forms.Button button10To2;
+        private System.Windows.Forms.Button button10To8;
+        private System.Windows.Forms.Button button16To2;
+        private System.Windows.Forms.Button button16To8;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
     }
 }
