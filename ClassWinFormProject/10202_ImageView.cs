@@ -41,15 +41,15 @@ namespace ClassWinFormProject
         {
             string[] fileList = Directory.GetFiles(this.folderDirPath);
             this.imagesList = new List<string>();
-            for(int i=0;i<fileList.Length;i++)
+            for (int i = 0; i < fileList.Length; i++)
             {
-                if(fileList[i].EndsWith(".jpg") || fileList[i].EndsWith(".png") || fileList[i].EndsWith(".JPG") || fileList[i].EndsWith(".PNG"))
+                if (fileList[i].EndsWith(".jpg") || fileList[i].EndsWith(".png") || fileList[i].EndsWith(".JPG") || fileList[i].EndsWith(".PNG"))
                 {
                     this.imagesList.Add(fileList[i]);
                 }
             }
             this.treeView1.Nodes.Clear();
-            foreach(string fileName in this.imagesList)
+            foreach (string fileName in this.imagesList)
             {
                 TreeNode node = new TreeNode(fileName);
                 this.treeView1.Nodes.Add(node);
@@ -60,6 +60,13 @@ namespace ClassWinFormProject
         {
             picDirPath = this.treeView1.SelectedNode.Text;
             pictureBox1.Image = Image.FromFile(picDirPath);
+        }
+
+        private void ButtonCancel_Click(object sender, EventArgs e)
+        {
+            ClassMainForm1 main = new ClassMainForm1();
+            this.Visible = false;
+            main.Show();
         }
     }
 }

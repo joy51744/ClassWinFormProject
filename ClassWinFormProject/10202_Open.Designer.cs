@@ -61,7 +61,7 @@
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel1.Text = "離開";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
@@ -98,7 +98,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.richTextBox1);
             this.Name = "_10202_Open";
-            this.Text = "C#課程專案 | 開啟文件";
+            this.Text = "C#課程專案 | 讀取文字檔";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);

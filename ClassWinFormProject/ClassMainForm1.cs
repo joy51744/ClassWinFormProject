@@ -121,7 +121,6 @@ namespace ClassWinFormProject
 
         private void buttonNotepad_Click(object sender, EventArgs e)
         {
-            //https://www.youtube.com/watch?v=Kmx-3GCK1nA
             _10202_Notepad notepad = new _10202_Notepad();
             this.Visible = false;
             notepad.Show();
@@ -129,7 +128,6 @@ namespace ClassWinFormProject
 
         private void buttonDraw_Click(object sender, EventArgs e)
         {
-            //http://cs0.wikidot.com/painter
             _10202_Draw draw = new _10202_Draw();
             this.Visible = false;
             draw.Show();

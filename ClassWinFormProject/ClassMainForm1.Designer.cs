@@ -79,20 +79,20 @@
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
             this.toolStripLabel1.Text = "專案";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(111, 22);
             this.toolStripMenuItem2.Text = "10201";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(109, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(111, 22);
             this.toolStripMenuItem3.Text = "10202";
             // 
             // toolStripSeparator1
@@ -108,7 +108,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
             this.toolStripLabel2.Text = "離開";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
@@ -202,10 +202,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Calisto MT", 21.75F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F);
             this.label1.Location = new System.Drawing.Point(290, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(221, 34);
+            this.label1.Size = new System.Drawing.Size(233, 33);
             this.label1.TabIndex = 96;
             this.label1.Text = "C# Class Project";
             // 
@@ -216,7 +216,7 @@
             this.buttonOpen.Name = "buttonOpen";
             this.buttonOpen.Size = new System.Drawing.Size(130, 45);
             this.buttonOpen.TabIndex = 107;
-            this.buttonOpen.Text = "開啟文件";
+            this.buttonOpen.Text = "讀取文字檔";
             this.buttonOpen.UseVisualStyleBackColor = true;
             this.buttonOpen.Click += new System.EventHandler(this.buttonOpen_Click);
             // 
