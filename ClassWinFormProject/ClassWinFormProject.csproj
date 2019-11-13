@@ -220,12 +220,6 @@
     <Compile Include="10202_DateTime.Designer.cs">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
     </Compile>
-    <Compile Include="10202_Draw.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="10202_Draw.Designer.cs">
-      <DependentUpon>10202_Draw.cs</DependentUpon>
-    </Compile>
     <Compile Include="10202_FormColor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -383,9 +377,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="10202_DateTime.resx">
       <DependentUpon>10202_DateTime.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="10202_Draw.resx">
-      <DependentUpon>10202_Draw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="10202_FormColor.resx">
       <DependentUpon>10202_FormColor.cs</DependentUpon>

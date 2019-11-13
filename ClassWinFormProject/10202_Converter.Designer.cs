@@ -91,13 +91,13 @@
             // 進制轉換ToolStripMenuItem
             // 
             this.進制轉換ToolStripMenuItem.Name = "進制轉換ToolStripMenuItem";
-            this.進制轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.進制轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.進制轉換ToolStripMenuItem.Text = "進制轉換";
             // 
             // 單位轉換ToolStripMenuItem
             // 
             this.單位轉換ToolStripMenuItem.Name = "單位轉換ToolStripMenuItem";
-            this.單位轉換ToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+            this.單位轉換ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.單位轉換ToolStripMenuItem.Text = "單位轉換";
             this.單位轉換ToolStripMenuItem.Click += new System.EventHandler(this.單位轉換ToolStripMenuItem_Click);
             // 

@@ -126,13 +126,6 @@ namespace ClassWinFormProject
             notepad.Show();
         }
 
-        private void buttonDraw_Click(object sender, EventArgs e)
-        {
-            _10202_Draw draw = new _10202_Draw();
-            this.Visible = false;
-            draw.Show();
-        }
-
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             ClassMainForm main = new ClassMainForm();

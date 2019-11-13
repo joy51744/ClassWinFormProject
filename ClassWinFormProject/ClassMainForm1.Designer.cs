@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClassMainForm1));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripDropDownButton();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -51,7 +50,6 @@
             this.buttonBrowser = new System.Windows.Forms.Button();
             this.buttonPOS = new System.Windows.Forms.Button();
             this.buttonClock = new System.Windows.Forms.Button();
-            this.buttonDraw = new System.Windows.Forms.Button();
             this.buttonNotepad = new System.Windows.Forms.Button();
             this.buttonConverter = new System.Windows.Forms.Button();
             this.buttonImageView = new System.Windows.Forms.Button();
@@ -79,20 +77,20 @@
             this.toolStripMenuItem2,
             this.toolStripMenuItem3});
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(45, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(44, 22);
             this.toolStripLabel1.Text = "專案";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(109, 22);
             this.toolStripMenuItem2.Text = "10201";
             this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(111, 22);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(109, 22);
             this.toolStripMenuItem3.Text = "10202";
             // 
             // toolStripSeparator1
@@ -108,7 +106,7 @@
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(32, 22);
+            this.toolStripLabel2.Size = new System.Drawing.Size(31, 22);
             this.toolStripLabel2.Text = "離開";
             this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
@@ -264,21 +262,8 @@
             this.buttonClock.UseVisualStyleBackColor = true;
             this.buttonClock.Click += new System.EventHandler(this.buttonRWD_Click);
             // 
-            // buttonDraw
-            // 
-            this.buttonDraw.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonDraw.BackgroundImage")));
-            this.buttonDraw.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonDraw.Location = new System.Drawing.Point(641, 290);
-            this.buttonDraw.Name = "buttonDraw";
-            this.buttonDraw.Size = new System.Drawing.Size(130, 45);
-            this.buttonDraw.TabIndex = 111;
-            this.buttonDraw.Text = "小畫板";
-            this.buttonDraw.UseVisualStyleBackColor = true;
-            this.buttonDraw.Click += new System.EventHandler(this.buttonDraw_Click);
-            // 
             // buttonNotepad
             // 
-            this.buttonNotepad.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonNotepad.BackgroundImage")));
             this.buttonNotepad.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.buttonNotepad.Location = new System.Drawing.Point(641, 193);
             this.buttonNotepad.Name = "buttonNotepad";
@@ -291,10 +276,10 @@
             // buttonConverter
             // 
             this.buttonConverter.Font = new System.Drawing.Font("標楷體", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.buttonConverter.Location = new System.Drawing.Point(641, 385);
+            this.buttonConverter.Location = new System.Drawing.Point(641, 290);
             this.buttonConverter.Name = "buttonConverter";
             this.buttonConverter.Size = new System.Drawing.Size(130, 45);
-            this.buttonConverter.TabIndex = 112;
+            this.buttonConverter.TabIndex = 111;
             this.buttonConverter.Text = "轉換器";
             this.buttonConverter.UseVisualStyleBackColor = true;
             this.buttonConverter.Click += new System.EventHandler(this.buttonConverter_Click);
@@ -316,7 +301,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.buttonClock);
-            this.Controls.Add(this.buttonDraw);
             this.Controls.Add(this.buttonNotepad);
             this.Controls.Add(this.buttonPOS);
             this.Controls.Add(this.buttonConverter);
@@ -365,7 +349,6 @@
         private System.Windows.Forms.Button buttonLotto;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button buttonNotepad;
-        private System.Windows.Forms.Button buttonDraw;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
